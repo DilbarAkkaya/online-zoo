@@ -47,6 +47,7 @@
        url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg');
 }
 :root {
+  --black: #000000;
   --green: #4B9200;
   --orange: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   --yellow: #FFEE2E;
@@ -58,4 +59,13 @@
   --gray-smoky: #ABABAB;
   --light-gray: #F1F3F2;
   --white-glass: #FDFDFF;
+}
+.content-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  background-color: var(--black);
 }
