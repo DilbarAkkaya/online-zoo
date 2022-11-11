@@ -38,6 +38,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--black-blue);
 }
 
 li {
@@ -50,7 +51,7 @@ h1 {
 }
 
 .content-wrapper {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -79,11 +80,11 @@ h1 {
   margin-right: 58px;
 }
 
-.item:last-child{
+.item:last-child {
   margin-right: 0;
 }
 
-.logo{
+.logo {
   margin-right: 63px;
   line-height: 12px;
 }
@@ -93,7 +94,7 @@ h1 {
   background-size: cover;
 }
 
-.watch-wrapper{
+.watch-wrapper {
   max-width: 465px;
   display: flex;
   flex-direction: column;
@@ -102,11 +103,12 @@ h1 {
   padding: 92px 0 0 820px;
 }
 
-.circle{
+.circle {
   width: 465px;
   height: 465px;
   border-radius: 50%;
-  background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);;
+  background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
+  ;
 }
 
 .title {
@@ -139,21 +141,23 @@ h1 {
   border: none;
 }
 
-.container{
+.container {
   position: relative;
 }
 
 .flower-backstage {
   position: relative;
 }
+
 .flower-backstage::before {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 30px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 105%;
   background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
+  z-index: -1;
 }
 
 .backstage-wrapper {
@@ -167,7 +171,7 @@ h1 {
   padding-top: 140px;
 }
 
-.backstage-wrapper h2 {
+h2 {
   font-size: 48px;
   line-height: 57.6px;
   font-weight: 400;
@@ -200,6 +204,7 @@ p[title] {
 }
 
 .arrow {
+  position: absolute;
   width: 62px;
   height: 62px;
   background-color: var(--orange);
@@ -212,16 +217,14 @@ p[title] {
 .prev {
   background-image: url(../../assets/icons/next.svg);
   transform: rotate(180deg);
-  position: absolute;
   top: 578px;
-  left: 8.7%;
+  right: 1180px;
 }
 
 .next {
   background-image: url(../../assets/icons/next.svg);
-  position: absolute;
   top: 578px;
-  right: 8.7%;
+  left: 1180px;
 }
 
 .active {
@@ -247,7 +250,7 @@ p[title] {
   padding-bottom: 10px;
 }
 
-.card>img{
+.card>img {
   display: block;
   border-radius: 5px 5px 0 0;
   width: 100%;
@@ -265,7 +268,7 @@ p[title] {
   color: var(--black);
 }
 
-.card p{
+.card p {
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
@@ -279,7 +282,7 @@ p[title] {
   height: 37px;
 }
 
-.meat{
+.meat {
   width: 48px;
   height: 38px;
 }
@@ -299,7 +302,7 @@ p[title] {
 .favorite-wrapper::before {
   content: "";
   position: absolute;
-  top: 500px;
+  top: 503px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -310,10 +313,80 @@ p[title] {
 .favorite-wrapper::after {
   content: "";
   position: absolute;
-  top: 410px;
+  top: 412px;
   left: 0;
   width: 100%;
   height: 100%;
   background: no-repeat url(../../assets/images/palm_foto.jpg) left;
   z-index: -1;
+}
+.favorite-container {
+  position: relative;
+}
+
+.friend-section {
+  padding-top: 69px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+}
+
+.friend-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 41px 0 0 99px;  
+}
+
+.friend-wrapper h2 {
+  padding: 0 0 30px 252px;
+  color: var(--orange-light);
+}
+
+.friend-wrapper p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  padding-bottom: 40px;
+}
+
+.friend-wrapper p:nth-child(3) {
+  font-weight: 500;
+  line-height: 20.8px;
+  padding-bottom: 10px;
+}
+
+.friend-wrapper p:nth-child(4) {
+  font-weight: 400;
+  line-height: 20.8px;
+  padding: 0 195px 60px 0;
+}
+
+.pay-wrapper {
+  display: grid;
+  grid-template-columns: 168px 69px 168px 69px 168px;
+  grid-column-gap: 30px;
+  margin: 0 100px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+  padding: 0 0 40px 377px;
+}
+.emergency {
+  display: inline-block;
+  border-bottom: 1px solid var(--orange-light);
+}
+
+.arrows {
+  padding-top: 59px;
+}
+.pic img{
+  padding-bottom: 28px;
+}
+.freind-button {
+    margin: 68px 0 59px 330px;
 }
