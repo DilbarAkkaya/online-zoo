@@ -198,3 +198,23 @@ p[title] {
 .text-container p:nth-child(4) {
   line-height: 22.4px;
 }
+
+.arrow {
+  width: 62px;
+  height: 62px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.prev {
+  background-image: url(../../assets/icons/next.svg);
+  transform: rotate(180deg);
+}
+.next {
+  background-image: url(../../assets/icons/next.svg);
+}
+.active {
+  background-color: var(--green);
+}
