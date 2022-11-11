@@ -5,8 +5,8 @@
   --orange-light: #fe9013;
   --orange: #f9804b;
   --yellow: #ffee2e;
-  --orange-grad: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  --pink-grad: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  --orange-grad: #fed290;
+  --pink-grad: #febdab;
   --red: #d31414;
   --black-blue: #333b41;
   --gray: #767474;
@@ -125,7 +125,7 @@ h1 {
   color: var(--yellow);
 }
 
-.watch-button {
+.main-button {
   width: 298px;
   height: 54px;
   margin: 70px 0 100px 185px;
@@ -208,13 +208,112 @@ p[title] {
   background-repeat: no-repeat;
   border: none;
 }
+
 .prev {
   background-image: url(../../assets/icons/next.svg);
   transform: rotate(180deg);
+  position: absolute;
+  top: 578px;
+  left: 8.7%;
 }
+
 .next {
   background-image: url(../../assets/icons/next.svg);
+  position: absolute;
+  top: 578px;
+  right: 8.7%;
 }
+
 .active {
   background-color: var(--green);
+}
+
+.grid {
+  padding-top: 175px;
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+}
+
+.favorite-wrapper {
+  position: relative;
+}
+
+.card {
+  width: 366px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.card>img{
+  display: block;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.card h5 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.card p{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--black);
+}
+
+.veget {
+  width: 33px;
+  height: 37px;
+}
+
+.meat{
+  width: 48px;
+  height: 38px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12px 0 16px;
+}
+
+.center {
+  margin-top: 80px;
+  margin-left: 433px;
+}
+
+.favorite-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 500px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url(../../assets/images/strelitzia.jpg) right;
+  z-index: -1;
+}
+
+.favorite-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 410px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url(../../assets/images/palm_foto.jpg) left;
+  z-index: -1;
 }
