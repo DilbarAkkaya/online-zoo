@@ -446,6 +446,9 @@ h3 {
 
 .freind-button {
   margin: 66px 0 59px 334px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .testimonials-wrapper {
