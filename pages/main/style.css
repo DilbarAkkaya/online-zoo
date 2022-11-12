@@ -477,6 +477,12 @@ h3 {
   margin-bottom: 16px;
 }
 
+.feedback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-content {
   position: relative;
   max-width: 268px;
@@ -508,8 +514,6 @@ h3 {
   opacity: 0.6;
   transform: scale(1.1);
 }
-
-
 
 .card-content::before {
   content: "";
@@ -553,6 +557,9 @@ h3 {
   letter-spacing: 0em;
   text-align: left;
 }
+.testimonials-wrapper figure {
+  margin-bottom: 10px;
+}
 
 .feedback {
   height: 309px;
@@ -577,6 +584,11 @@ input[type='range'] {
   background-image: linear-gradient(var(--orange-light), var(--orange));
   background-size: 19% 100%;
   background-repeat: no-repeat;
+}
+
+input[type='range']:hover {
+  background-image: linear-gradient(var(--orange-dark), var(--red));
+  cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -692,10 +704,35 @@ footer input {
 .submit {
   width: 128px;
   height: 42px;
-  color: var(--green);
   background: var(--light-gray);
   border-radius: 5px;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.submit:active {
+  color: var(--green);
   border: 1px solid var(--green);
+}
+
+.email:invalid + .submit{
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.email:focus {
+  color: var(--green);
+  border: 1px solid var(--green);
+  outline: none;
+}
+
+.email:valid + .submit{
+  color: var(--black);
+  border: 1px solid var(--black-blue);
+}
+
+.email:active, .email:focus {
+  outline: none;
 }
 
 .footer-button {
