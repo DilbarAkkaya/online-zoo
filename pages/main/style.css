@@ -396,6 +396,7 @@ h3 {
 
 .testimonials-wrapper {
   align-items: center;
+  position: relative;
 }
 
 .testimonials-wrapper h3 {
@@ -509,4 +510,16 @@ input[type="range"]::before {
   border-radius: 5px;
   margin: 25px 0 0 0;
 }
-
+.testimonials-flower {
+  position: relative;
+}
+.testimonials-flower::before {
+  content: "";
+  position: absolute;
+  top: 480px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat url(../../assets/images/leav_foto.jpg) right;
+  z-index: -1;
+}
