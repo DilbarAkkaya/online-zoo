@@ -82,14 +82,28 @@ h1 {
 
 .item {
   margin-right: 58px;
+  cursor: pointer;
 }
 
-header .item:first-child {
+.item:hover {
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+header ul .item:nth-child(6):hover {
+  background: var(--black);
+  -webkit-background-clip: var(--black);
+  -webkit-text-fill-color: none;
+  background-clip: var(--black);
+  color: var(--black);
+  cursor:default;
+}
+
+h1 {
+  cursor: default;
 }
 
 .item:last-child {
@@ -100,7 +114,18 @@ header .item:first-child {
   margin-right: 63px;
   line-height: 12px;
 }
+.nav-link {
+  color:var(--white);
+}
 
+.active-link {
+  background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: default;
+}
 .section-watch {
   background-image: url(../../assets/images/panda.jpg);
   background-size: cover;
