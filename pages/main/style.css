@@ -15,6 +15,7 @@
   --white-glass: #fdfdff;
   --white-gray: #e0d8f0;
   --white1: #eaf7fe;
+  --gray1: #f5f7f6;
 }
 
 html {
@@ -396,6 +397,7 @@ h3 {
 .testimonials-wrapper {
   align-items: center;
 }
+
 .testimonials-wrapper h3 {
   padding: 0;
   padding-top: 140px;
@@ -406,6 +408,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -413,6 +416,7 @@ h3 {
 
 .testimonials-cards {
   column-gap: 30px;
+  margin-bottom: 16px;
 }
 
 .card-content {
@@ -466,3 +470,39 @@ line-height: 18px;
   height: 309px;
   overflow: hidden;
 }
+
+.testimonials-input {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='range'] {
+  justify-content: center;
+  appearance: none;
+  margin: 0 auto;
+  width: 599px;
+  height: 6px;
+  outline: none;
+  position: relative;
+  background: var(--gray1);
+  border-radius: 5px;
+  background-image: linear-gradient(var(--orange-light), var(--orange));
+  background-size: 19% 100%;
+  background-repeat: no-repeat;
+  }
+
+input[type=range]::-webkit-slider-thumb {
+  display: none; 
+}
+input[type="range"]::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(300deg, rgba(254, 189, 171, 0.74) 30%, rgba(243, 169, 248, 0.66) 50%, var(--white-gray) 80%, var(--white1) 127%, var(--white1) 149%), linear-gradient(315deg, rgba(254, 189, 171, 0.74) 30%, rgba(243, 169, 248, 0.66) 50%,  var(--white-gray) 80%, var(--white1) 127%, var(--white1) 149%);
+  border-radius: 5px;
+  z-index: -1;
+}
+
