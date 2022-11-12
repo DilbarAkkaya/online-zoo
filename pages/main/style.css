@@ -6,6 +6,7 @@
   --orange: #f9804b;
   --yellow: #ffee2e;
   --orange-grad: #fed290;
+  --orange-dark: #E47209;
   --pink-grad: #febdab;
   --red: #d31414;
   --black-blue: #333b41;
@@ -115,7 +116,7 @@ h1 {
   line-height: 12px;
 }
 .nav-link {
-  color:var(--white);
+  color: var(--white);
 }
 
 .active-link {
@@ -126,6 +127,12 @@ h1 {
   color: transparent;
   cursor: default;
 }
+
+.main-button:hover{
+  cursor: pointer;
+  background: var(--orange-dark);
+}
+
 .section-watch {
   background-image: url(../../assets/images/panda.jpg);
   background-size: cover;
