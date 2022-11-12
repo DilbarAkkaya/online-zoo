@@ -100,7 +100,7 @@ header ul .item:nth-child(6):hover {
   -webkit-text-fill-color: none;
   background-clip: var(--black);
   color: var(--black);
-  cursor:default;
+  cursor: default;
 }
 
 h1 {
@@ -115,6 +115,7 @@ h1 {
   margin-right: 63px;
   line-height: 12px;
 }
+
 .nav-link {
   color: var(--white);
 }
@@ -129,7 +130,7 @@ h1 {
 }
 
 
-.main-button:hover{
+.main-button:hover {
   cursor: pointer;
   background: var(--orange-dark);
 }
@@ -272,7 +273,9 @@ p[title] {
   left: 1180px;
 }
 
-.arrow:hover, .prev:hover, .next:hover {
+.arrow:hover,
+.prev:hover,
+.next:hover {
   background-color: var(--orange-dark);
   cursor: pointer;
 }
@@ -483,24 +486,28 @@ h3 {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .img-wrap {
-    margin-bottom: 10px;
-    background: #000;  
-    overflow: hidden;  
+  margin-bottom: 10px;
+  background: #000;
+  overflow: hidden;
 }
 
 .card img {
   opacity: 1;
-transition: opacity 124ms linear, transform 124ms linear;
-width: 100%;
-height: auto;
-display: block;
+  transition: opacity 124ms linear, transform 124ms linear;
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
 .card img:hover {
-    opacity: 0.6; 
-    transform: scale(1.1);
+  opacity: 0.6;
+  transform: scale(1.1);
 }
-  
+
+
+
 .card-content::before {
   content: "";
   position: absolute;
@@ -515,6 +522,13 @@ display: block;
 
 .card-content figcaption {
   margin-left: 10px;
+}
+
+.card:hover .desc-text h5,
+.card:hover .desc-text p {
+  transform: translateY(-70px);
+  transition: all 0.8s ease-in 0s;
+  color: var(--white);
 }
 
 .card-content figure {
