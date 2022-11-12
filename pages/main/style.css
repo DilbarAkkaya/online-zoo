@@ -483,7 +483,24 @@ h3 {
   letter-spacing: 0em;
   text-align: left;
 }
+.img-wrap {
+    margin-bottom: 10px;
+    background: #000;  
+    overflow: hidden;  
+}
 
+.card img {
+  opacity: 1;
+transition: opacity 124ms linear, transform 124ms linear;
+width: 100%;
+height: auto;
+display: block;
+}
+.card img:hover {
+    opacity: 0.6; 
+    transform: scale(1.1);
+}
+  
 .card-content::before {
   content: "";
   position: absolute;
@@ -501,7 +518,7 @@ h3 {
 }
 
 .card-content figure {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .location,
