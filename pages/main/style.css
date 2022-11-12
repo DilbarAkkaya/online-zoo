@@ -128,6 +128,7 @@ h1 {
   cursor: default;
 }
 
+
 .main-button:hover{
   cursor: pointer;
   background: var(--orange-dark);
@@ -269,6 +270,11 @@ p[title] {
   background-image: url(../../assets/icons/next.svg);
   top: 578px;
   left: 1180px;
+}
+
+.arrow:hover, .prev:hover, .next:hover {
+  background-color: var(--orange-dark);
+  cursor: pointer;
 }
 
 .active {
