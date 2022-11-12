@@ -84,7 +84,7 @@ h1 {
   margin-right: 58px;
 }
 
-.item:first-child {
+header .item:first-child {
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -548,7 +548,7 @@ input[type="range"]::before {
 }
 
 .footer-wrapper {
-  padding: 41px 0 50px 0;
+  padding: 40px 0 50px 0;
 }
 
 .logo-wrapper {
@@ -556,9 +556,13 @@ input[type="range"]::before {
 }
 
 .footer .logo {
-  margin-bottom: 68px;
+  height: 52px;
+  margin-bottom: 70px;
 }
 
+.footer .logo-link {
+  font-size: 0;
+}
 .footer-subscribe {
 font-size: 16px;
 font-weight: 100;
@@ -573,7 +577,7 @@ padding-left: 32px;
   justify-content: end;
 }
 
-.nav-wrapper li {
+.nav-wrapper .item {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -581,7 +585,7 @@ padding-left: 32px;
   text-align: left;
   color: var(--white);
 }
-.nav-wrapper li:nth-child(1) {
+footer nav ul li:nth-child(1) {
   color: var(--orange-light);
 }
 
@@ -622,7 +626,7 @@ footer input {
 .footer-button {
  padding: 0;
  margin: 0;
- margin-bottom: 44px;
+ margin-bottom: 46px;
 }
 
 .footer li {
@@ -631,21 +635,16 @@ footer input {
 
 .social-link{
   display: flex;
-    flex-direction: row;
-    align-content: center;
+    
     color: var(--white);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-top: 5px;
+    line-height: 22.4px;
+
 }
 
-.footer img {
-  display: block;
-  margin-right: 16px;
+.social-link img {
+  margin-right: 12px;
+  position: relative;
+  bottom: 2px;
 }
 .subscribe-text {
   color: var(--white);
