@@ -534,7 +534,7 @@ h3 {
 .card:hover .desc-text h5,
 .card:hover .desc-text p {
   transform: translateY(-70px);
-  transition: all 0.8s ease-in 0s;
+  transition: all 0.8s ease-in 0.1s;
   color: var(--white);
 }
 
