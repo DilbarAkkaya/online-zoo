@@ -130,7 +130,7 @@ h1 {
 }
 
 
-.main-button:hover {
+.main-button:hover, .submit:hover {
   cursor: pointer;
   background: var(--orange-dark);
 }
@@ -708,6 +708,7 @@ footer input {
   border-radius: 5px;
   color: var(--red);
   border: 1px solid var(--red);
+  cursor: pointer;
 }
 
 .submit:active {
