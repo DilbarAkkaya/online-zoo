@@ -12,17 +12,26 @@
   padding: 40px 0 180px 0;
 }
 
-.friend-title h3 {
-  padding: 0;
+.friend-title {
   color: var(--white);
-  padding-bottom: 10px;
+  padding-bottom: 60px;
+}
+.friend-title h3:nth-child(1) {
+  padding: 0 0 10px 0;
+}
+
+.friend-title h3:nth-child(3) {
+  padding: 45px 0 0 0;
+  color: var(--orange-light);
+font-size: 36px;
+font-weight: 400;
+line-height: 46.8px;
 }
 
 .friend-title p, span {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: var(--white);
 }
 .friend-title span {
   font-weight: 400;
