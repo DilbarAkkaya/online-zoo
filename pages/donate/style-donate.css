@@ -3,6 +3,27 @@
   background-size: cover;
   min-height: 386px;
 }
+
 .header {
   position: relative;
+}
+
+.friend-section {
+  padding: 40px 0 180px 0;
+}
+
+.friend-title h3 {
+  padding: 0;
+  color: var(--white);
+  padding-bottom: 10px;
+}
+
+.friend-title p, span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--white);
+}
+.friend-title span {
+  font-weight: 400;
 }
