@@ -134,6 +134,12 @@ color: var(--black);
 
 .bar-radio {
   appearance: none;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 .bar-label {
   background: left 8px url(../../assets/icons/dollar.svg) no-repeat;
@@ -143,6 +149,7 @@ color: var(--black);
 font-size: 26px;
 font-weight: 500;
 line-height: 36px;
+cursor: pointer;
 }
 
 .bar-line {
@@ -153,3 +160,27 @@ line-height: 36px;
   top: 12px;
   left: 30px;
 }
+.bar-radio:checked + .bar-label {
+color: var(--orange-light);
+background: left 8px url(../../assets/icons/dollar_colored.svg) no-repeat;
+}
+
+.bar-radio:checked + .bar-label:before {
+  content: '';
+  background: url(../../assets/icons/circle_l.svg) no-repeat;
+  position: absolute;
+bottom: 52px;
+left: 19px;
+  width: 22.95px;
+  height: 22.95px;
+  }
+
+  .bar-radio:checked + .bar-label:after {
+    content: '';
+    background: url(../../assets/icons/circle_b.svg) no-repeat;
+    position: absolute;
+  bottom: 43px;
+  left: 11px;
+    width: 40px;
+    height: 40px;
+    }
