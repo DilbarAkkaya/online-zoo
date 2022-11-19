@@ -92,7 +92,7 @@ font-size: 16px;
 line-height: 22px;
 }
 .amount-wrapper {
-  padding: 0 0 0 1px;
+  padding: 0 92px 0 1px;
 }
 
 h6 {
@@ -109,6 +109,12 @@ color: var(--black);
   border-radius: 2px;
   height: 27px;
   position: relative;
+}
+.progress-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 66px 0 0;
 }
 
 .progress-bar li {
