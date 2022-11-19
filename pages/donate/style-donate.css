@@ -38,7 +38,7 @@ line-height: 46.8px;
 }
 
 .friend-wrapper {
-  padding: 41px 0 85px 91px;
+  padding: 41px 0 64px 91px;
 }
 
 .friend-wrapper h2{
@@ -200,12 +200,12 @@ left: 19px;
       border-radius: 2px;
 line-height: 22px;
 color: var(--gray3);
-margin-bottom: 25px;
     }
 
     .time-wrapper {
       position: relative;
       display: flex;
+      margin-top: 23px;
     }
     .time-radio {
         appearance: none;
@@ -240,4 +240,12 @@ border-radius: 50%;
 
   .once-wrapper {
     padding-left: 53px;
+  }
+  .freind-button {
+    margin: 29px 0 32px 343px;
+    padding: 1px 0 0 3px;
+  }
+
+  .share {
+    padding: 0 0 0 341px;
   }
