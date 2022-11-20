@@ -221,11 +221,17 @@ h6 {
 .time-radio {
   appearance: none;
   position: absolute;
-  top: 3px;
-  left: 20px;
   cursor: pointer;
   width: 16px;
   height: 16px;
+}
+.month-input {
+  top: 2px;
+  left: -22px;
+}
+.once-input {
+  top: 2px;
+  left: 112px;
 }
 
 .time-label::before {
