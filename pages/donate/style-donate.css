@@ -16,6 +16,7 @@
   color: var(--white);
   padding-bottom: 60px;
 }
+
 .friend-title h3:nth-child(1) {
   padding: 0 0 10px 0;
 }
@@ -23,16 +24,18 @@
 .friend-title h3:nth-child(3) {
   padding: 45px 0 0 0;
   color: var(--orange-light);
-font-size: 36px;
-font-weight: 400;
-line-height: 46.8px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46.8px;
 }
 
-.friend-title p, span {
+.friend-title p,
+span {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
+
 .friend-title span {
   font-weight: 400;
 }
@@ -41,18 +44,18 @@ line-height: 46.8px;
   padding: 41px 0 64px 91px;
 }
 
-.friend-wrapper h2{
-padding: 0 0 20px 250px;
+.friend-wrapper h2 {
+  padding: 0 0 20px 250px;
 }
 
 .friend-wrapper p:nth-child(2) {
- padding: 0;
+  padding: 0;
 }
 
 .pic {
   display: flex;
   flex-direction: row;
-    align-items: center;
+  align-items: center;
   position: relative;
   padding: 60px 0 0 216px;
   margin-bottom: 48px;
@@ -61,12 +64,13 @@ padding: 0 0 20px 250px;
 .pic img {
   padding: 0;
 }
+
 .count {
   color: var(--black);
-font-size: 72px;
-font-weight: 500;
-line-height: 58px;
-padding: 11px;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 58px;
+  padding: 11px;
 }
 
 .diet {
@@ -88,9 +92,10 @@ padding: 11px;
 }
 
 .diet p:nth-child(2) {
-font-size: 16px;
-line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
+
 .amount-wrapper {
   padding: 0 92px 0 1px;
 }
@@ -98,10 +103,10 @@ line-height: 22px;
 h6 {
   padding-left: 5px;
   padding-bottom: 17px;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--black);
 }
 
 .progress-bar {
@@ -111,6 +116,7 @@ color: var(--black);
   position: relative;
   margin-bottom: 100px;
 }
+
 .progress-bar ul {
   display: flex;
   flex-direction: row;
@@ -122,6 +128,7 @@ color: var(--black);
   position: relative;
   z-index: 1000;
 }
+
 .bar-item::before {
   content: '';
   width: 10px;
@@ -142,15 +149,16 @@ color: var(--black);
   width: 20px;
   height: 20px;
 }
+
 .bar-label {
   background: left 8px url(../../assets/icons/dollar.svg) no-repeat;
   position: absolute;
   top: 40px;
   padding-left: 12px;
-font-size: 26px;
-font-weight: 500;
-line-height: 36px;
-cursor: pointer;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36px;
+  cursor: pointer;
 }
 
 .bar-line {
@@ -161,94 +169,103 @@ cursor: pointer;
   top: 12px;
   left: 30px;
 }
-.bar-radio:checked + .bar-label {
-color: var(--orange-light);
-background: left 8px url(../../assets/icons/dollar_colored.svg) no-repeat;
+
+.bar-radio:checked+.bar-label {
+  color: var(--orange-light);
+  background: left 8px url(../../assets/icons/dollar_colored.svg) no-repeat;
 }
 
-.bar-radio:checked + .bar-label:before {
+.bar-radio:checked+.bar-label:before {
   content: '';
   background: url(../../assets/icons/circle_l.svg) no-repeat;
   position: absolute;
-bottom: 52px;
-left: 19px;
+  bottom: 52px;
+  left: 19px;
   width: 22.95px;
   height: 22.95px;
-  }
+}
 
-  .bar-radio:checked + .bar-label:after {
-    content: '';
-    background: url(../../assets/icons/circle_b.svg) no-repeat;
-    position: absolute;
+.bar-radio:checked+.bar-label:after {
+  content: '';
+  background: url(../../assets/icons/circle_b.svg) no-repeat;
+  position: absolute;
   bottom: 43px;
   left: 11px;
-    width: 40px;
-    height: 40px;
-    }
+  width: 40px;
+  height: 40px;
+}
 
-    .amount-form {
-      align-items: center;
-    
-    }
-    .amount-input {
-      width: 268px;
-      margin: 0 auto;
-      border: 1px solid var(--gray3);
-      background: center right 9px url(../../assets/icons/gray_dollar.svg) no-repeat;
-      
-      padding: 14px 9px 14px 9px;
-      border-radius: 2px;
-line-height: 22px;
-color: var(--gray3);
-    }
+.amount-form {
+  align-items: center;
 
-    .time-wrapper {
-      position: relative;
-      display: flex;
-      margin-top: 23px;
-    }
-    .time-radio {
-        appearance: none;
-        position: absolute;
-        top: 3px;
-        left: 20px;
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-      }
-  .time-label::before {
-    position: absolute;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--orange-light);
-border-radius: 50%;
-  }
-  .month-label::before{
-    left: -22px;
-    top: 2px;
-  }
+}
 
-  .once-label:before {
-    left: 112px;
-    top: 2px;
-  }
-  .month-wrapper, .once-wrapper {
-    width: 84px;
-    padding: 3px 3px;
-  }
+.amount-input {
+  width: 268px;
+  margin: 0 auto;
+  border: 1px solid var(--gray3);
+  background: center right 9px url(../../assets/icons/gray_dollar.svg) no-repeat;
 
-  .once-wrapper {
-    padding-left: 53px;
-  }
-  .freind-button {
-    margin: 29px 0 32px 343px;
-    padding: 1px 0 0 3px;
-  }
+  padding: 14px 9px 14px 9px;
+  border-radius: 2px;
+  line-height: 22px;
+  color: var(--gray3);
+}
 
-  .share {
-    padding: 0 0 0 341px;
-  }
-  .footer-wrapper {
-    padding: 40px 0 38px 0;
-  }
+.time-wrapper {
+  position: relative;
+  display: flex;
+  margin-top: 23px;
+}
+
+.time-radio {
+  appearance: none;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.time-label::before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--orange-light);
+  border-radius: 50%;
+}
+
+.month-label::before {
+  left: -22px;
+  top: 2px;
+}
+
+.once-label:before {
+  left: 112px;
+  top: 2px;
+}
+
+.month-wrapper,
+.once-wrapper {
+  width: 84px;
+  padding: 3px 3px;
+}
+
+.once-wrapper {
+  padding-left: 53px;
+}
+
+.freind-button {
+  margin: 29px 0 32px 343px;
+  padding: 1px 0 0 3px;
+}
+
+.share {
+  padding: 0 0 0 341px;
+}
+
+.footer-wrapper {
+  padding: 40px 0 38px 0;
+}
