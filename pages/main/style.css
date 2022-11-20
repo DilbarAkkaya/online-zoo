@@ -86,7 +86,7 @@ h1 {
   cursor: pointer;
 }
 
-.item:hover {
+nav .item:hover {
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -752,10 +752,14 @@ footer input {
   line-height: 22.4px;
 }
 
-.social-link img {
+.social-link svg {
   margin-right: 12px;
   position: relative;
   bottom: 2px;
+}
+.social-list a:hover, .social-list svg circle:hover, .subscribe-text p:hover {
+  color: var(--green);
+  fill: var(--green);
 }
 
 .subscribe-text {
