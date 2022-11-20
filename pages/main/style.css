@@ -86,7 +86,7 @@ h1 {
   cursor: pointer;
 }
 
-.item:hover {
+nav .item:hover {
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,7 +130,8 @@ h1 {
 }
 
 
-.main-button:hover, .submit:hover {
+.main-button:hover,
+.submit:hover {
   cursor: pointer;
   background: var(--orange-dark);
 }
@@ -557,6 +558,7 @@ h3 {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .testimonials-wrapper figure {
   margin-bottom: 10px;
 }
@@ -716,7 +718,7 @@ footer input {
   border: 1px solid var(--green);
 }
 
-.email:invalid + .submit{
+.email:invalid+.submit {
   color: var(--red);
   border: 1px solid var(--red);
 }
@@ -727,12 +729,13 @@ footer input {
   outline: none;
 }
 
-.email:valid + .submit{
+.email:valid+.submit {
   color: var(--black);
   border: 1px solid var(--black-blue);
 }
 
-.email:active, .email:focus {
+.email:active,
+.email:focus {
   outline: none;
 }
 
@@ -752,10 +755,17 @@ footer input {
   line-height: 22.4px;
 }
 
-.social-link img {
+.social-link svg {
   margin-right: 12px;
   position: relative;
   bottom: 2px;
+}
+
+.social-list a:hover,
+.social-list svg circle:hover,
+.subscribe-text p:hover {
+  color: var(--green);
+  fill: var(--green);
 }
 
 .subscribe-text {
