@@ -287,3 +287,7 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
+.time-radio:checked + .time-label:before {
+  background: var(--green);
+  border: 1px solid var(--green);
+}
