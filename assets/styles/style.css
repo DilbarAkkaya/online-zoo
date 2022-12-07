@@ -65,7 +65,7 @@ li {
 }
 
 h1 {
-  margin: 0 6.063rem 0 0;
+  margin: 0  calc(37px + (97 - 37) * (100vw - 1000px) / (1600 - 1000)) 0 0;
   color: var(--black);
 }
 
@@ -153,6 +153,8 @@ h1 {
 .section-watch {
   background-image: url(../../assets/images/panda.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .watch-wrapper {
@@ -791,10 +793,17 @@ footer input {
 }
 
 @media (max-width:1000px){
+  .content-wrapper {
+    max-width: 940px;
+  }
   .title{
     font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
   }
   .grid {
     grid-template-columns: repeat(3, calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640)));
+  }
+  h1 {
+    margin: 0;
+    font-size: 1px;
   }
 }
