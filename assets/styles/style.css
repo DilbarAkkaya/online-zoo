@@ -69,10 +69,6 @@ h1 {
   color: var(--black);
 }
 
-.common-wrapper {
-  margin: 0 auto;
-}
-
 .content-wrapper {
   max-width: 1160px;
   margin: 0 auto;
@@ -795,7 +791,7 @@ footer input {
 }
 
 @media (max-width:1000px){
-    .title{
+  .title{
     font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
   }
   .grid {
