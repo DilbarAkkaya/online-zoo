@@ -167,7 +167,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5.75rem 0 0 51.25rem;
+  padding: 0;
+  padding-top: calc(40px + (92 - 40) * (100vw - 1000px) / (1600 - 1000));
+  padding-left: calc(600px + (820 - 600) * (100vw - 1000px) / (1600 - 1000));
 }
 
 .circle {
