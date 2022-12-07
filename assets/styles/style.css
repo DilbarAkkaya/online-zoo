@@ -150,12 +150,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 92px 0 0 820px;
+  padding: 5.75rem 0 0 51.25rem;
 }
 
 .circle {
-  width: 465px;
-  height: 465px;
+  width: 29.063rem;
+  height: 29.063rem;
   border-radius: 50%;
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
   ;
@@ -163,10 +163,10 @@ h1 {
 
 .title {
   position: absolute;
-  top: 74px;
-  left: 81px;
+  top: 4.625rem;
+  left: 5.063rem;
   font-weight: 700;
-  font-size: 106.496px;
+  font-size: 6.656rem;
   line-height: 75%;
   text-align: center;
   color: var(--white);
@@ -178,9 +178,9 @@ h1 {
 }
 
 .main-button {
-  width: 298px;
-  height: 54px;
-  margin: 70px 0 100px 185px;
+  width: 18.625rem;
+  height: 3.375rem;
+  margin: 4.37rem 0 6.25rem 11.563rem;
   border-radius: 25px;
   color: var(--white);
   background: linear-gradient(113.96deg, var(--orange) 1.49%, var(--orange-light) 101.44%);
@@ -202,7 +202,7 @@ h1 {
 .flower-backstage::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 3.125rem;
   left: 0;
   width: 100%;
   height: 105%;
@@ -217,21 +217,21 @@ h1 {
 .backstage-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 87px;
-  padding-top: 140px;
+  gap: 5.438rem;
+  padding-top: 8.75rem;
 }
 
 h2 {
-  font-size: 48px;
-  line-height: 57.6px;
+  font-size: 3rem;
+  line-height: 3.6rem;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 p[title] {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .text-container {
@@ -311,14 +311,14 @@ p[title] {
   display: block;
   border-radius: 5px 5px 0 0;
   width: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
 }
 
 .card h5 {
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
-  line-height: 22.4px;
+  font-size: 1rem;
+  line-height: 1.4rem;
   letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
@@ -326,40 +326,40 @@ p[title] {
 }
 
 .card p {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 1.125rem;
   letter-spacing: 0em;
   text-align: left;
   color: var(--black);
 }
 
 .veget {
-  width: 33px;
-  height: 37px;
+  width: 2.063rem;
+  height: 2.313rem;
 }
 
 .meat {
-  width: 48px;
-  height: 38px;
+  width: 3rem;
+  height: 2.375rem;
 }
 
 .description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 12px 0 16px;
+  padding: 0 0.75rem 0 1rem;
 }
 
 .center {
-  margin-top: 80px;
-  margin-left: 433px;
+  margin-top: 5rem;
+  margin-left: 27.063rem;
 }
 
 .favorite-wrapper::before {
   content: "";
   position: absolute;
-  top: 503px;
+  top: 31.438rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -370,7 +370,7 @@ p[title] {
 .favorite-wrapper::after {
   content: "";
   position: absolute;
-  top: 412px;
+  top: 25.75rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -383,7 +383,7 @@ p[title] {
 }
 
 .friend-section {
-  padding: 69px 0 100px 0;
+  padding: 4.313rem 0 6.25rem 0;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, var(--pink-grad) 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, var(--white-gray) 80.49%, var(--white1) 127.9%, var(--white1) 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, var(--white-gray) 80.49%, var(--white1) 127.9%, var(--white1) 149.54%);
   opacity: 0.9;
 }
@@ -394,31 +394,31 @@ p[title] {
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 41px 0 0 99px;
+  padding: 2.563rem 0 0 6.188rem;
 }
 
 .friend-wrapper h2 {
-  padding: 0 0 30px 252px;
+  padding: 0 0 1.875rem 15.75rem;
   color: var(--orange-light);
 }
 
 .friend-wrapper p:nth-child(2) {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 28.8px;
-  padding-bottom: 40px;
+  line-height: 1.8rem;
+  padding-bottom: 2.5rem;
 }
 
 .friend-wrapper p:nth-child(3) {
   font-weight: 500;
-  line-height: 20.8px;
-  padding-bottom: 10px;
+  line-height: 1.3rem;
+  padding-bottom: 0.625rem;
 }
 
 .friend-wrapper p:nth-child(4) {
   font-weight: 400;
-  line-height: 20.8px;
-  padding: 0 195px 60px 0;
+  line-height: 1.3rem;
+  padding: 0 12.188rem 3.75rem 0;
 }
 
 .pay-wrapper {
