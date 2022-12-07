@@ -410,7 +410,9 @@ p[title] {
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 2.563rem 0 0 6.188rem;
+  padding: 0;
+  padding-top: calc(30px + (41 - 30) * (100vw - 1000px) / (1600 - 1000));
+  padding-left:  calc(49px + (99 - 49) * (100vw - 1000px) / (1600 - 1000));
 }
 
 .friend-wrapper h2 {
