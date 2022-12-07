@@ -317,7 +317,7 @@ p[title] {
 }
 
 .card {
-  width: 366px;
+  width: calc(294px + (366 - 294) * (100vw - 1000px) / (1600 - 1000));;
   border: 1px solid var(--orange);
   border-radius: 5px;
   padding-bottom: 10px;
@@ -439,9 +439,9 @@ p[title] {
 
 .pay-wrapper {
   display: grid;
-  grid-template-columns: 10.5rem 4.313rem 10.5rem 4.313rem 10.5rem;
+  grid-template-columns: 168px 69px 168px 69px 168px;
   grid-column-gap: 1.875rem;
-  margin: 0 6.25rem;
+  margin: 0 99px;
 }
 
 h3 {
@@ -806,9 +806,9 @@ footer input {
   .title{
     font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
   }
-  .grid {
+/*   .grid {
     grid-template-columns: repeat(3, calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640)));
-  }
+  } */
   h1 {
     margin: 0;
     font-size: 1px;
