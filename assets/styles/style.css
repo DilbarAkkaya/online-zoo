@@ -794,4 +794,7 @@ footer input {
   .content-wrapper {
     max-width: 940px;
   }
+  .title{
+    font-size: calc(54.29px + (85.2px - 54.29px) * (100vw - 640px) / (1000 - 640));
+  }
 }
