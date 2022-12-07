@@ -177,7 +177,7 @@ h1 {
   top: 4.625rem;
   left: 5.063rem;
   font-weight: 700;
-  font-size: 6.656rem;
+  font-size: calc(85.2px + (106.5 - 85.2) * (100vw - 1000px) / (1600 - 1000));
   line-height: var(--line79px);
   text-align: center;
   color: var(--white);
@@ -795,6 +795,6 @@ footer input {
     max-width: 940px;
   }
   .title{
-    font-size: calc(54.29px + (85.2px - 54.29px) * (100vw - 640px) / (1000 - 640));
+    font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
   }
 }
