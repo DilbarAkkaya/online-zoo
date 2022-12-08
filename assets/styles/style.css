@@ -325,7 +325,7 @@ p[title] {
 .grid {
   padding-top: calc(140px + (170 - 140) * (100vw - 1000px) / (1600 - 1000));
   display: grid;
-  grid-template-columns: repeat(3, 31.6%);
+  grid-template-columns: repeat(3, 31.2%);
   grid-row-gap: calc(92px + (20 - 90) * (100vw - 1000px) / (1600 - 1000));
   grid-column-gap: 1.875rem;
 }
@@ -684,7 +684,7 @@ input[type="range"]::before {
 
 .footer .logo {
   height: 3.25rem;
-  margin-bottom: 4.375rem;
+  margin-bottom: calc(69px + (70 - 69) * (100vw - 1000px) / (1600 - 1000));
 }
 
 .footer .logo-link {
@@ -785,7 +785,7 @@ footer input {
 .footer-button {
   padding: 0;
   margin: 0;
-  margin-bottom: 2.875rem;
+  margin-bottom: calc(0px + (46 - 0) * (100vw - 1000px) / (1600 - 1000));;
 }
 
 .footer li {
@@ -857,8 +857,8 @@ footer input {
     margin-bottom: 140px;
   }
   .favorite-wrapper::before {
-    top: 518px;
-    background-size: 252px;
+    top: 515px;
+    background-size: 243px;
 }
 .favorite-wrapper::after {
   top: 31.75rem;
@@ -868,7 +868,7 @@ footer input {
   padding: 27px 0 48px 0;
 }
 .friend-wrapper h2 {
-  padding: 0 0 22px 192px;
+  padding: 0 0 23px 190px;
 }
 .friend-wrapper p:nth-child(1) {
   padding-bottom: 0;
@@ -903,8 +903,27 @@ h3 {
 .sq {
   margin: 48px 0 140px 0;
 }
-.testimonials-flower::before {
-  top: 347px;
-  background-size: 200px;
+
+.footer-button{
+  margin: 0 0 48px 0;
+}
+.footer-item {
+  padding: 0 0 0 0px;
+  margin-right: -43px;
+}
+.footer nav {
+  position: relative;
+}
+.footer-list{
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  right: -160px;
+}
+.subscribe-text {
+  padding: 0 0 10px 170px;
+}
+.subscribe {
+  margin-right: 30px;
 }
 }
