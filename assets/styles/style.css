@@ -350,7 +350,7 @@ p[title] {
 .card h5 {
   font-weight: 500;
   font-style: normal;
-  font-size: 1rem;
+  font-size: calc(12.47px + (16 - 12.47) * (100vw - 640px) / (1600 - 640));
   line-height: var(--line22px);
   letter-spacing: 0em;
   text-align: left;
@@ -359,7 +359,7 @@ p[title] {
 }
 
 .card p {
-  font-size: 0.938rem;
+  font-size: calc(11.69px + (15 - 11.69) * (100vw - 640px) / (1600 - 640));
   font-weight: 300;
   line-height: var(--line18px);
   letter-spacing: 0em;
@@ -367,14 +367,14 @@ p[title] {
   color: var(--black);
 }
 
-.veget {
-  width: 2.063rem;
+.card .veget {
+  width: calc(25.72px + (33 - 25.72) * (100vw - 640px) / (1600 - 640));
   height: 2.313rem;
 }
 
-.meat {
-  width: 3rem;
-  height: 2.375rem;
+.card .meat {
+  width: calc(37.41px + (48 - 37.41) * (100vw - 640px) / (1600 - 640));
+  height: calc(28.84px + (37 - 28.84) * (100vw - 640px) / (1600 - 640));
 }
 
 .description {
@@ -966,8 +966,11 @@ h3 {
   display: inline-block;
    width: 47px;
  }
-.content-wrapper{
+ .content-wrapper {
   max-width: 600px;
+ }
+.friend-section .content-wrapper{
+  max-width: 640px;
 }
  .watch-wrapper{
   padding-left: 400px;
@@ -999,4 +1002,61 @@ h3 {
 .text-container p:nth-child(4) {
   padding-right: 100px;
 }
+
+.card{
+  width: calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640));
+  padding-bottom: 4px;
+}
+.grid {
+  padding-top: calc(78px + (140 - 78) * (100vw - 640px) / (1000 - 640));
+  grid-template-columns: repeat(2, 48%);
+  grid-row-gap: calc(92px + (20 - 90) * (100vw - 640px) / (1000 - 640));
+  grid-column-gap: 1.875rem;
+}
+.img-wrap {
+  margin-bottom: 6px;
+}
+.description {
+  padding: 0 8px 0 11px;
+}
+.card h5{
+  line-height: 17.46px;
+}
+.card p {
+  line-height: 14.03px;
+}
+.prev {
+  right: calc(315px + (553 - 315) * (100vw - 640px) / (1000 - 640));
+}
+.arrow {
+  top: calc(420px + (509 - 455) * (100vw - 640px) / (1000 - 640));
+}
+.next {
+  left: calc(315px + (1180 - 940) * (100vw - 640px) / (1000 - 640));
+}
+.grid figure:nth-child(6), .grid figure:nth-child(5) {
+  display: none;
+}
+.center {
+  margin: 60px 0px 100px 152px;
+}
+.friend-wrapper h2 {
+  font-size: 42px;
+  line-height: 50.4px;
+  padding: 0 0 0px 80px;
+  padding-top: calc(4px + (41 - 30) * (100vw - 640px) / (1000 - 640));
+}
+.favorite-wrapper::before {
+  top: 460px;
+  background-size: 175px;
+}
+.favorite-wrapper::after{
+top: 425px;
+background-size: 190px;
+left: -50px;
+}
+.friend-section {
+  padding: 19px 0 48px 0;
+}
+
 }
