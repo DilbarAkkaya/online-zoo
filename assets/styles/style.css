@@ -234,12 +234,26 @@ h1 {
 .backstage-wrapper {
   position: relative;
 }
-
+.img-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 408px;
+  flex: 0 0 calc(455px + (609 - 455) * (100vw - 1000px) / (1600 - 1000));;
+  /*width: calc(455px + (609 - 455) * (100vw - 1000px) / (1600 - 1000));;*/
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .backstage-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 5.438rem;
-  padding-top: 8.75rem;
+  gap: calc(31px + (87 - 31) * (100vw - 1000px) / (1600 - 1000));
+  padding-top: calc(101px + (140 - 101) * (100vw - 1000px) / (1600 - 1000));
 }
 
 h2 {
@@ -248,7 +262,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.250rem;
 }
 
 p[title] {
@@ -826,5 +840,15 @@ footer input {
   }
   .main-button {
     margin: 50px 0 47px 150px;
+  }
+  .flower-backstage::before {
+    background: none;
+  }
+
+  .img-container {
+    margin: 10px 0;
+  }
+  h2 {
+    padding-bottom: 22px;
   }
 }
