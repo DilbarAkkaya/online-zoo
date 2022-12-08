@@ -976,4 +976,27 @@ h3 {
  .main-button{
   margin: 0px 662px 37px 100px;
 }
+.img-container {
+  display: none;
+}
+.flower-backstage::before {
+  background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
+  background-size: 160px;
+  top: 15px;
+  left: 30px;
+}
+.backstage-wrapper{
+  padding-top: calc(60px + (140 - 101) * (100vw - 640px) / (1000 - 640));
+  padding-left: 3px;
+}
+.text-container p:nth-child(2) {
+  padding-bottom: 31px;
+  padding-right: 120px;
+}
+.text-container p:nth-child(3) {
+  padding-bottom: 19px;
+}
+.text-container p:nth-child(4) {
+  padding-right: 100px;
+}
 }
