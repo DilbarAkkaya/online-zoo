@@ -983,10 +983,11 @@ h3 {
   display: none;
 }
 .flower-backstage::before {
-  background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
-  background-size: 160px;
-  top: 15px;
-  left: 30px;
+  background: no-repeat url(../../assets/images/flower_2.jpg) right;
+  background-size: 132px;
+  top: 0;
+  left: 0;
+  height: 110%;
 }
 .backstage-wrapper{
   padding-top: calc(60px + (140 - 60) * (100vw - 640px) / (1000 - 640));
@@ -1128,13 +1129,65 @@ padding-left: 5px;
 }
 
 .testimonials-flower::before {
-  top: calc(270px + (390 - 347) * (100vw - 640px) / (1000 - 640));
-  left: 6px;
-  background-size: calc(150px + (250 - 200) * (100vw - 1000px) / (1600 - 1000));
+  background: url(../../assets/images/leav_2.jpg) no-repeat right;
+  top: calc(300px + (347 - 300) * (100vw - 640px) / (1000 - 640));
+  left: 0px;
+  background-size: calc(114px + (200 - 114) * (100vw - 640px) / (1000 - 640));
 }
 .feedback-button {
   margin:39px 0 80px 180px;
   width: 240px;
   height: 54px;
+}
+.footer .logo-ico {
+  width: 84px;
+  height: 53px;
+}
+.footer-wrapper {
+  padding: 11px 0 0 0;
+}
+.footer .logo{
+  margin-bottom: 34px;
+}
+.footer-button{
+  margin: 0 0 129px 0;
+  width: 298px;
+  height: 54px;
+}
+.subscribe {
+  display: none;
+}
+.social-list li {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.social-link {
+  font-size: 0;
+}
+.logo-wrapper {
+  position: relative;
+}
+.social-list{
+  position: absolute;
+  top: 3px;
+  left: 574px;
+}
+.footer-subscribe {
+  padding: 0;
+  align-self: end;
+  margin: 0 0 12px 0;
+}
+.subscribe-text {
+  padding: 0;
+}
+.footer-list {
+  right: 35px;
+}
+.footer-list li {
+  padding-left: 0;
+  margin-right: 0;
+}
+footer nav ul li:nth-child(1) {
+  margin-left: 0;
 }
 }
