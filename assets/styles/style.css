@@ -149,7 +149,7 @@ h1 {
 }
 
 
-.main-button:hover,
+.button:hover,
 .submit:hover {
   cursor: pointer;
   background: var(--orange-dark);
@@ -849,9 +849,6 @@ footer input {
 .watch-button {
   margin: 0 0 47px 425px;
 }
-  .main-button {
-    margin: 50px 0 47px 150px;
-  }
   .flower-backstage::before {
     background: none;
   }
@@ -1010,9 +1007,6 @@ h3 {
   padding-left: 400px;
   padding-top: 42px;
  } */
- .main-button{
-  margin: -3px 668px 40px 100px;
-}
 .img-container {
   display: none;
 }
@@ -1235,9 +1229,7 @@ footer nav ul li:nth-child(1) {
     grid-row-gap: 20px;
     grid-column-gap: 0;
 }
-.main-button{
-  margin: 0;
-}
+
 .arrow {
   display: none;
 }
