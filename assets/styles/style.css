@@ -515,8 +515,10 @@ h3 {
 }
 
 .testimonials-cards {
-  column-gap: 1.875rem;
-  margin-bottom: calc(12px + (16 - 12) * (100vw - 1000px) / (1600 - 1000));;
+  column-gap: 26px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 2px;
 }
 
 .feedback-button {
@@ -529,7 +531,6 @@ h3 {
 
 .card-content {
   position: relative;
-  max-width: calc(293px + (268 - 293) * (100vw - 1000px) / (1600 - 1000));
   background: var(--light-gray);
   border-radius: 20px;
   padding: 15px 15px 19px 16px;
@@ -538,6 +539,9 @@ h3 {
   line-height: var(--line18px);
   letter-spacing: 0em;
   text-align: left;
+  flex-shrink: 1;
+  flex-basis: 256px;
+  flex-grow: 1;
 }
 
 .img-wrap {
@@ -620,7 +624,7 @@ input[type='range'] {
   justify-content: center;
   appearance: none;
   margin: 0 auto;
-  width: calc(400px + (599 - 400) * (100vw - 1000px) / (1600 - 1000));
+  width: calc(390px + (599 - 390) * (100vw - 1000px) / (1600 - 1000));
   height: 6px;
   outline: none;
   position: relative;
@@ -868,7 +872,11 @@ footer input {
   .favorite-container{
     padding-top: 140px;
   }
-  .grid{
+  .grid {
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 31.2%);
+    /*padding-top: calc(78px + (140 - 78) * (100vw - 640px) / (1000 - 640));*/
+    grid-row-gap: calc(165px + (20 - 92) * (100vw - 640px) / (1000 - 640));
     grid-column-gap: 30px;
   }
   .favorite-button {
@@ -884,6 +892,9 @@ footer input {
 }
 .arrow{
   top: 509px;
+}
+.card {
+  width: calc(223px + (293 - 223) * (100vw - 640px) / (1000 - 640));
 }
 .card h5 {
   font-size: 16px;
@@ -916,6 +927,9 @@ footer input {
 .friend-wrapper p:nth-child(4) {
   padding: 0 30px 0 0;
 }
+.friend-wrapper {
+  padding-left: calc(0px + (49 - 0) * (100vw - 640px) / (1000 - 640));
+}
 h3 {
   padding: 4.2% 0px 5% 35.6%;
 }
@@ -928,6 +942,9 @@ h3 {
 }
 .card-content:last-child{
   display: none;
+}
+.card-content{
+  flex-basis: 293px;
 }
 .feedback {
   padding-right: 5px;
@@ -958,6 +975,15 @@ h3 {
 }
 .footer input {
   margin-right: 4px;
+}
+.pay-wrapper {
+  display: grid;
+  grid-template-columns: 168px 69px 168px 69px 168px;
+  grid-column-gap: 1.875rem;
+  margin: 0 calc(0px + (43 - 0) * (100vw - 640px) / (1000 - 640));
+}
+.footer input {
+  width: 228px;
 }
 }
 @media (max-width: 640px){
@@ -1162,9 +1188,10 @@ h3 {
   row-gap: 15px;
 }
 .card-content {
-  max-width: calc(600px + (268 - 600) * (100vw - 640px) / (1000 - 640));
+/*   max-width: calc(600px + (268 - 600) * (100vw - 640px) / (1000 - 640));
   padding: 13px 15px 12px 11px;
-  max-height: 109px;
+  max-height: 109px; */
+  flex-basis: 293px;
 }
 .feedback {
 padding-left: 5px;
