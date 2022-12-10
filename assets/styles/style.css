@@ -332,6 +332,7 @@ p[title] {
 }
 
 .favorite-container{
+  position: relative;
   padding-top: 178px;
 }
 .favorite-wrapper {
@@ -414,12 +415,6 @@ margin: 80px 0 100px 431px;
   background: no-repeat url(../../assets/images/palm_foto.jpg) left;
   z-index: -1;
 }
-
-.favorite-container {
-  position: relative;
-}
-
-
 .friend-section {
   padding: 4.313rem 0 6.25rem 0;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, var(--pink-grad) 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, var(--white-gray) 80.49%, var(--white1) 127.9%, var(--white1) 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, var(--white-gray) 80.49%, var(--white1) 127.9%, var(--white1) 149.54%);
@@ -830,43 +825,77 @@ footer input {
   .content-wrapper {
     max-width: 940px;
   }
-/*   .title{
-    font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
-  } */
-/*   .grid {
-    grid-template-columns: repeat(3, calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640)));
-  } */
+  .section-watch {
+    background-position: center;
+  }
+  .title {
+    top: 54px;
+    left: 66px;
+  font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
+  line-height: calc(40.72px + (63.75 - 40.72) * (100vw - 640px) / (1000 - 640));
+}
   h1 {
     margin: 0;
     font-size: 1px;
   }
-/*   .watch-wrapper{
-    padding-left: 610px;
-    padding-top: 65px;
-  } */
+  .watch-wrapper {
+    height: calc(374px + (584 - 374) * (100vw - 640px) / (1000 - 640));;
+    }
+    
+.container {
+  top: 69px;
+  left: calc(350px + (425 - 350) * (100vw - 640px) / (1000 - 640));
+}
+.watch-button {
+  margin: 0 0 47px 425px;
+}
   .main-button {
     margin: 50px 0 47px 150px;
   }
   .flower-backstage::before {
     background: none;
   }
-
-  .img-container {
+.img-container {
+    flex: 0 0 calc(300px + (457 - 300) * (100vw - 640px) / (1000 - 640));
     margin: 10px 0;
+  }
+  .backstage-wrapper{
+    padding-top: calc(54px + (99 - 54) * (100vw - 640px) / (1000 - 640));
   }
   h2 {
     padding-bottom: 22px;
   }
-.favorite-button {
-margin: 0;
+  .favorite-container{
+    padding-top: 140px;
   }
+  .grid{
+    grid-column-gap: 30px;
+  }
+  .favorite-button {
+    margin: 82px 0 140px 320px;
+}
   .favorite-wrapper::before {
-    top: 515px;
+    top: 517px;
     background-size: 243px;
 }
 .favorite-wrapper::after {
-  top: 31.75rem;
+  top: 507px;
   background: no-repeat url(../../assets/images/palm_1.jpg) left;
+}
+.arrow{
+  top: 509px;
+}
+.card h5 {
+  font-size: 16px;
+}
+.description {
+  padding: 0px 17px 0 14px;
+}
+.card p{
+  font-size: 15px;
+}
+.prev {
+  right: calc(504px + (553 - 501) * (100vw - 640px) / (1000 - 640));
 }
 .friend-section {
   padding: 27px 0 48px 0;
@@ -891,7 +920,7 @@ h3 {
   padding: 4.2% 0px 5% 35.6%;
 }
 .freind-button {
-  margin: 74px 0 52px 273px;
+  margin: 75px 0 52px 271px;
 }
 .testimonials-wrapper h3 {
   padding-top:calc(60px + (100 - 60) * (100vw - 640px) / (1000 - 640));
@@ -927,8 +956,8 @@ h3 {
 .subscribe-text {
   padding: 0 0 10px 170px;
 }
-.subscribe {
-  margin-right: 30px;
+.footer input {
+  margin-right: 4px;
 }
 }
 @media (max-width: 640px){
@@ -1014,10 +1043,10 @@ h3 {
   padding-bottom: 4px;
 }
 .grid {
-  padding-top: calc(78px + (140 - 78) * (100vw - 640px) / (1000 - 640));
+  /*padding-top: calc(78px + (140 - 78) * (100vw - 640px) / (1000 - 640));*/
   grid-template-columns: repeat(2, 48%);
   grid-row-gap: calc(92px + (20 - 98) * (100vw - 640px) / (1000 - 640));
-  grid-column-gap: 27px;
+  grid-column-gap: 30px;
 }
 .img-wrap {
   margin-bottom: 6px;
@@ -1032,13 +1061,13 @@ h3 {
   line-height: 14.03px;
 }
 .prev {
-  right: calc(315px + (553 - 315) * (100vw - 640px) / (1000 - 640));
+  right: calc(315px + (553 - 315) * (100vw - 320px) / (640 - 320));
 }
 .arrow {
-  top: calc(420px + (509 - 420) * (100vw - 640px) / (1000 - 640));
+  top: calc(420px + (509 - 420) * (100vw - 320px) / (640 - 320));
 }
 .next {
-  left: calc(315px + (940 - 315) * (100vw - 640px) / (1000 - 640));
+  left: calc(315px + (940 - 315) * (100vw - 320px) / (640 - 320));
 }
 .grid figure:nth-child(6), .grid figure:nth-child(5) {
   display: none;
