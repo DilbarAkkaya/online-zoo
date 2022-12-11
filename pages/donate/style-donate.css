@@ -7,7 +7,13 @@
 .header {
   position: relative;
 }
+.header .nav {
+    margin: 0 230px 0 0;
 
+}
+.designed {
+  margin-left: 0;
+}
 .friend-section {
   padding: 40px 0 180px 0;
 }
@@ -291,9 +297,30 @@ input[type="number"]:focus {
   background: var(--green);
   border: 1px solid var(--green);
 }
+.footer .nav .list {
+  padding-left: 41px;
+}
+.footer .nav .item {
+  padding: 0px 15px 13px 43px;
+  margin: 0;
+}
 @media (max-width:1000px) {
   .bar-line {
-    width: calc(785px + (915 - 785) * (100vw - 1000px) / (1600 - 1000));
+    width: calc(524px + (785 - 524) * (100vw - 640px) / (1000 - 640));
 }
+.subscribe-text {
+  padding: 0 0 10px 0px;
+}
+.footer input {
+  width: calc(0px + (228 - 0) * (100vw - 640px) / (1000 - 640));
+}
+.section-watch {
+  background-position: center;
+}
+}
+@media (max-width:640px) {
 
+.footer input {
+  display: none;
+}
 }
