@@ -12,6 +12,9 @@
     margin: 0 230px 0 0;
 
 }
+.hamburger-menu {
+  display: none;
+}
 .designed {
   margin-left: 0;
 }
@@ -360,6 +363,7 @@ h6 {
   padding-left: 18px;
 }
   .bar-line {
+    left: 10px;
     width: calc(524px + (785 - 524) * (100vw - 640px) / (1000 - 640));
 }
 .freind-button {
@@ -395,8 +399,109 @@ h6 {
 }
 }
 @media (max-width:640px) {
-
+  .hamburger-menu {
+    display: flex;
+  }
+.content-wrapper {
+  max-width: 600px;
+}
+.background {
+  background-position: 38% 0px;
+  min-height: 335px;
+}
+.friend-title h3:nth-child(1) {
+ padding: 0px 0px 19px 0px;
+ font-size: 24px;
+ line-height: 28.8px;
+}
+.friend-section {
+  padding: 30px 21px 79px 19px;
+}
+.friend-title span {
+  font-weight: 500;
+}
+.friend-title h3:nth-child(3) {
+  padding: 31px 0 0 0;
+}
+.friend-wrapper {
+  padding:0;
+}
+.friend-wrapper h2 {
+  padding: 3px 0 28px 69px;
+  font-size: 48px;
+}
+.friend-wrapper p:nth-child(2) {
+  padding: 0 0 0 0;
+  font-size: 24px;
+  text-align: center;
+}
+.diet p:nth-child(2) {
+  padding: 0 0 0 0;
+  font-size: 16px;
+  text-align: center;
+}
+.pic {
+  padding: 51px 0 0 27px;
+  margin-bottom: 41px;
+}
+.friend-wrapper p:nth-child(1) {
+  padding: 56px 0px 12px 0;
+}
+.diet {
+  font-size: 16px;
+  padding: 0;
+}
+.diet::after {
+  top: 181px;
+  left: 197px;
+}
+.amount-wrapper {
+  padding: 0;
+}
+.bar-list li:nth-child(2), .bar-list li:nth-child(3){
+  display: none;
+}
+.bar-line {
+    width: calc(280px + (524 - 280) * (100vw - 320px) / (640 - 320));
+  left: 40px;
+}
+.progress-bar ul {
+  padding: 0 55px 0px 25px;
+}
 .footer input {
   display: none;
+}
+h6 {
+  padding-left: 10px;
+  padding-top: 0;
+  padding-bottom: 7px;
+}
+.bar-label {
+  left: -8px;
+}
+.amount-input {
+  width: 180px;
+  padding: 8px;
+}
+.time-wrapper {
+  margin-top: 30px;
+}
+.share {
+  padding: 0 0 0 150px;
+}
+.freind-button {
+  margin: 28px 0 32px 152px;
+}
+.footer-wrapper {
+  padding: 10px 0 0px 0;
+}
+.subscribe-text {
+  padding: 0;
+}
+.footer .nav .list {
+  padding-left: 0;
+  bottom: 12px;
+  right: 42px;
+  width: 293px;
 }
 }
