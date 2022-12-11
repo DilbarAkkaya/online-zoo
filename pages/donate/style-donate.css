@@ -317,10 +317,13 @@ input[type="number"]:focus {
   padding: 0px 95px 28px 0px;
 }
 .friend-wrapper {
-  padding: 0px 0 64px 47px;
+  padding: 0px 0 49px 47px;
 }
 .friend-wrapper h2 {
   padding: 0 0 6px 185px;
+}
+.friend-section {
+  padding: 40px 0 29px 0;
 }
 .pic {
   padding: 58px 0 0px 148px;
@@ -359,8 +362,30 @@ h6 {
   .bar-line {
     width: calc(524px + (785 - 524) * (100vw - 640px) / (1000 - 640));
 }
+.freind-button {
+  margin: 29px 0 32px 276px;
+}
+.share {
+  padding: 0 0 0 275px;
+}
+.subscribe {
+  padding: 0 36px 0 0;
+}
 .subscribe-text {
-  padding: 0 0 10px 0px;
+  padding: 0 0 10px 170px;
+}
+.footer .nav .list  {
+    position: absolute;
+    padding-left: 0px;
+    bottom: 13px;
+    right: -216px;
+    width: 330px;
+}
+.footer .nav .item {
+  padding: 0;
+}
+.footer .nav .item:last-child {
+  padding-right: 0px;
 }
 .footer input {
   width: calc(0px + (228 - 0) * (100vw - 640px) / (1000 - 640));
