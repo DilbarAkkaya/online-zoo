@@ -306,8 +306,55 @@ input[type="number"]:focus {
   margin: 0;
 }
 @media (max-width:1000px) {
+  .header .nav {
+    margin: 0 90px 0 0;
+}
   .background {
     background-position: 28% 50%;
+    min-height: 390px;
+}
+.friend-title h3:nth-child(1) {
+  padding: 0px 95px 28px 0px;
+}
+.friend-wrapper {
+  padding: 0px 0 64px 47px;
+}
+.friend-wrapper h2 {
+  padding: 0 0 6px 185px;
+}
+.pic {
+  padding: 58px 0 0px 148px;
+}
+.diet {
+  padding: 40px 0px 0px 0;
+}
+.diet p:nth-child(2) {
+    font-size: 16px;
+    line-height: 22px;
+}
+.friend-wrapper p:nth-child(2) {
+    padding: 8px 0 0 0;
+}
+.amount-wrapper {
+  padding: 0 65px 0 18px;
+}
+.progress-bar ul {
+  padding: 0 30px 0px 2px;
+}
+.bar-item::before {
+  left: 10px;
+}
+.bar-radio:checked+.bar-label:before {
+  left: 2px;
+}
+.bar-radio:checked+.bar-label:after {
+  left: -6px;
+}
+.progress-bar li:first-child {
+display: none;
+}
+h6 {
+  padding-left: 18px;
 }
   .bar-line {
     width: calc(524px + (785 - 524) * (100vw - 640px) / (1000 - 640));
