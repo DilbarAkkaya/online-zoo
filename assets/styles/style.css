@@ -873,11 +873,12 @@ footer input {
     padding-top: 140px;
   }
   .grid {
-    grid-column-gap: 30px;
-    grid-template-columns: repeat(3, 31.2%);
+    grid-column-gap: 27px;
+    grid-template-columns: repeat(3, 31.15%);
     /*padding-top: calc(78px + (140 - 78) * (100vw - 640px) / (1000 - 640));*/
     grid-row-gap: calc(165px + (20 - 92) * (100vw - 640px) / (1000 - 640));
-    grid-column-gap: 30px;
+    grid-auto-flow: row;
+    overflow: hidden;
   }
   .favorite-button {
     margin: 82px 0 140px 320px;
@@ -894,7 +895,7 @@ footer input {
   top: 509px;
 }
 .card {
-  width: calc(223px + (293 - 223) * (100vw - 640px) / (1000 - 640));
+  width: calc(222px + (293 - 222) * (100vw - 640px) / (1000 - 640));
 }
 .card h5 {
   font-size: 16px;
@@ -978,9 +979,14 @@ h3 {
 }
 .pay-wrapper {
   display: grid;
-  grid-template-columns: 168px 69px 168px 69px 168px;
-  grid-column-gap: 1.875rem;
+  grid-template-columns: 21% 9% 21% 9% 21%;;
+  grid-column-gap: 28px;
   margin: 0 calc(0px + (43 - 0) * (100vw - 640px) / (1000 - 640));
+  overflow: hidden;
+  grid-auto-flow: row;
+}
+.pay-wrapper img {
+  width: 100%;
 }
 .footer input {
   width: 228px;

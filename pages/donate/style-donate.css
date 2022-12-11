@@ -162,7 +162,7 @@ h6 {
 }
 
 .bar-line {
-  width: 915px;
+  width: calc(785px + (915 - 785) * (100vw - 1000px) / (1600 - 1000));
   height: 2px;
   background-color: var(--middle-gray);
   position: absolute;
@@ -290,4 +290,10 @@ input[type="number"]:focus {
 .time-radio:checked + .time-label:before {
   background: var(--green);
   border: 1px solid var(--green);
+}
+@media (max-width:1000px) {
+  .bar-line {
+    width: calc(785px + (915 - 785) * (100vw - 1000px) / (1600 - 1000));
+}
+
 }
