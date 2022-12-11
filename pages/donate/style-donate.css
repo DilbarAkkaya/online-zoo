@@ -1,6 +1,7 @@
 .background {
   background-image: url(../../assets/images/panda_bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 386px;
 }
 
@@ -305,6 +306,9 @@ input[type="number"]:focus {
   margin: 0;
 }
 @media (max-width:1000px) {
+  .background {
+    background-position: 28% 50%;
+}
   .bar-line {
     width: calc(524px + (785 - 524) * (100vw - 640px) / (1000 - 640));
 }
