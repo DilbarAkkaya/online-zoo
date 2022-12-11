@@ -402,12 +402,18 @@ h6 {
   .hamburger-menu {
     display: flex;
   }
+  .header {
+    position: fixed;
+    padding: 1px 0 1px 0;
+    max-width: calc(320px + (640 - 320) * (100vw - 320px) / (640 - 320));
+  }
 .content-wrapper {
   max-width: 600px;
 }
 .background {
-  background-position: 38% 0px;
-  min-height: 335px;
+  background-position: 38% 101%;
+  background-size: 217%;
+  min-height: calc(187px + (370 - 187) * (100vw - 320px) / (640 - 320));
 }
 .friend-title h3:nth-child(1) {
  padding: 0px 0px 19px 0px;
@@ -504,4 +510,30 @@ h6 {
   right: 42px;
   width: 293px;
 }
+}
+@media(max-width:320px) {
+.header{
+  max-width: calc(0px + (320 - 0) * (100vw - 0px) / (320 - 0));
+}
+.content-wrapper{
+  max-width: 300px;
+}
+.background {
+  background-position: 33% 106%;
+  background-size: 241%;
+  min-height: calc(0px + (219 - 0) * (100vw - 0px) / (320 - 0));
+}
+  .pic img {
+  width: 160px;
+  }
+  .freind-button {
+    margin: 0;
+  }
+  .diet {
+    margin-right: 0;
+  }
+  .bar-line {
+    width: 280px;
+    left: 0;
+  }
 }
