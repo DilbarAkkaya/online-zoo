@@ -1273,12 +1273,12 @@ footer input {
     align-items: center;
     column-gap: 0;
     row-gap: 15px;
-    height: 357px;
+    height: 354px;
   }
 
   .card-content {
     flex-basis: 293px;
-    padding: 12px 16px 12px 11px;
+    padding: 12px 10px 0px 12px;
   }
 
   .feedback {
