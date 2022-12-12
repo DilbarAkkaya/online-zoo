@@ -1036,7 +1036,7 @@ footer input {
 
   .header {
     position: fixed;
-    max-width: 640px;
+    max-width: calc(320px + (640 - 320) * ((100vw - 320px) / (640 - 320)));
   }
 
   .hamburger-menu {
@@ -1564,7 +1564,7 @@ footer input {
   }
 
   .header {
-    max-width: 320px;
+    max-width: calc(0px + (320 - 0) * ((100vw - 0px) / (320 - 0)));
   }
 
   .footer .logo:before {
