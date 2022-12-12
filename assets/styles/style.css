@@ -200,7 +200,8 @@ h1 {
 }
 
 .watch-button {
-  margin: 0 0 100px 664px;
+  margin: 0 0 0 calc(425px + (664 - 425) * (100vw - 1000px) / (1600 - 1000));
+  margin-bottom: calc(47px + (100 - 47) * (100vw - 1000px) / (1600 - 1000));;
 }
 
 
@@ -830,7 +831,7 @@ footer input {
 
   .title {
     top: 54px;
-    left: 66px;
+    left: calc(42px + (66 - 42) * (100vw - 640px) / (1000 - 640));
     font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
     line-height: calc(40.72px + (63.75 - 40.72) * (100vw - 640px) / (1000 - 640));
   }
@@ -851,7 +852,8 @@ footer input {
   }
 
   .watch-button {
-    margin: 0 0 47px 425px;
+    margin: 0 0 47px calc(0px + (425 - 0) * (100vw - 640px) / (1000 - 640));
+    margin-right: calc(300px + (0 - 300) * (100vw - 640px) / (1000 - 640));;
   }
 
   .flower-backstage::before {
@@ -1104,6 +1106,8 @@ footer input {
 
   .watch-button {
     margin: 0px 300px 40px 0px;
+    margin-bottom: calc(-113px + (40 - (-113)) * (100vw - 320px) / (640 - 320));
+    margin-right: calc(0px + (300px - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .favorite-container {
