@@ -850,7 +850,7 @@ footer input {
 
   .container {
     top: 69px;
-    left: calc(350px + (425 - 350) * (100vw - 640px) / (1000 - 640));
+    left: calc(312px + (425 - 312) * (100vw - 640px) / (1000 - 640));
   }
 
   .watch-button {
@@ -1072,8 +1072,8 @@ footer input {
   }
 
   .circle {
-    width: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
-    height: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+    width: calc(119.09px + (237.6 - 119.09) * (100vw - 320px) / (640 - 320));
+    height: calc(119.09px + (237.6 - 119.09) * (100vw - 320px) / (640 - 320));
   }
 
   .container {
