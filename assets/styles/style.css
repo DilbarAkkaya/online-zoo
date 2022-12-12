@@ -826,11 +826,16 @@ footer input {
   .content-wrapper {
     max-width: 940px;
   }
-
+  .designed {
+    margin-left: calc(0px + (95 - 0) * (100vw - 640px) / (1000 - 640));
+  }
   .section-watch {
     background-position: center;
   }
-
+  .circle {
+    width: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+    height: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+  }
   .title {
     top: calc(38px + (54 - 38) * (100vw - 640px) / (1000 - 640));
     left: calc(42px + (66 - 42) * (100vw - 640px) / (1000 - 640));
@@ -889,8 +894,8 @@ footer input {
 
   .grid {
     grid-column-gap: 27px;
-    grid-template-columns: repeat(3, 31.15%);
-    grid-row-gap: calc(165px + (20 - 92) * (100vw - 640px) / (1000 - 640));
+    grid-template-columns: repeat(3, calc(150px + (294 - 150) * (100vw - 640px) / (1000 - 640)));
+    grid-row-gap: calc(20px + (92 - 20) * (100vw - 640px) / (1000 - 640));
     grid-auto-flow: row;
     overflow: hidden;
   }
@@ -910,11 +915,13 @@ footer input {
   }
 
   .arrow {
-    top: 509px;
+    top:calc(420px + (509 - 420) * (100vw - 640px) / (1000 - 640));
+    width: calc(0px + (62 - 0) * (100vw - 640px) / (1000 - 640));
+    height: calc(0px + (62 - 0) * (100vw - 640px) / (1000 - 640));
   }
 
   .card {
-    width: calc(222px + (293 - 222) * (100vw - 640px) / (1000 - 640));
+    width: 100%;
   }
 
   .card h5 {
@@ -1161,13 +1168,14 @@ footer input {
   }
 
   .card {
-    width: calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640));
+    width: 100%;
+ /*   width: calc(294px + (285 - 294) * (100vw - 320px) / (640 - 320));*/
     padding-bottom: 4px;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 48%);
-    grid-row-gap: calc(92px + (20 - 98) * (100vw - 640px) / (1000 - 640));
+    grid-template-columns: repeat(2, calc(150px + (285 - 150) * (100vw - 320px) / (640 - 320)));
+    grid-row-gap: calc(20px + (92 - 20) * (100vw - 320px) / (640 - 320));
     grid-column-gap: 30px;
   }
 
@@ -1180,15 +1188,18 @@ footer input {
   }
 
   .prev {
-    right: calc(150px + (315 - 150) * (100vw - 320px) / (640 - 320));
+    right: calc(0px + (315 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .arrow {
-    top: 420px;
+    top: calc(0px + (420 - 0) * (100vw - 320px) / (640 - 320));
+      width: calc(0px + (62 - 0) * (100vw - 320px) / (640 - 320));
+      height: calc(0px + (62 - 0) * (100vw - 320px) / (640 - 320));
+  
   }
 
   .next {
-    left: calc(150px + (315 - 150) * (100vw - 320px) / (640 - 320));
+    left: calc(0px + (315 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .grid figure:nth-child(6),
@@ -1197,7 +1208,7 @@ footer input {
   }
 
   .favorite-button {
-    margin: 60px 0px 100px 152px;
+    margin: 60px 0px 100px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .friend-wrapper {
@@ -1246,20 +1257,22 @@ footer input {
     content: "";
     position: absolute;
     top: -28px;
-    right: 394px;
+    right: calc(0px + (394 - 0) * (100vw - 320px) / (640 - 320));
     width: 100%;
     height: 100%;
     background: no-repeat url(../../assets/icons/arrow_gr.svg) right;
+    background-size: calc(5px + (85 - 5) * (100vw - 320px) / (640 - 320));
   }
 
   figure.pic::after {
     content: "";
     position: absolute;
     top: -29px;
-    right: 186px;
+    right: calc(0px + (186 - 0) * (100vw - 320px) / (640 - 320));
     width: 100%;
     height: 100%;
     background: no-repeat url(../../assets/icons/arrow_gr.svg) right;
+    background-size: calc(0px + (85 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .friend-wrapper p:nth-child(2) {
@@ -1281,7 +1294,7 @@ footer input {
   }
 
   .freind-button {
-    margin: 44px 0 60px 151px;
+    margin: 44px 0 60px calc(1px + (151 - 1) * (100vw - 320px) / (640 - 320));
   }
 
   .testimonials-cards {
@@ -1314,7 +1327,7 @@ footer input {
   }
 
   .feedback-button {
-    margin: 39px 0 80px 180px;
+    margin: 39px 0 80px calc(31px + (180 - 31) * (100vw - 320px) / (640 - 320));
     width: 240px;
     height: 54px;
   }
@@ -1334,7 +1347,7 @@ footer input {
 
   .footer-button {
     margin: 0 0 129px 0;
-    width: 298px;
+    width: calc(298px + (298 - 298) * (100vw - 320px) / (640 - 320));
     height: 54px;
   }
 
@@ -1473,6 +1486,7 @@ footer input {
     display: none;
   }
 
+
   .friend-section {
     padding: 5px 10px 20px 10px;
   }
@@ -1559,6 +1573,7 @@ footer input {
 
   .footer-button {
     margin: 32px 0 141px 0;
+    width: calc(0px + (298 - 0) * (100vw - 0px) / (320 - 0));
   }
 
   .circle {
