@@ -863,7 +863,7 @@ footer input {
   }
 
   .img-container {
-    flex: 0 0 calc(300px + (457 - 300) * (100vw - 640px) / (1000 - 640));
+    flex: 0 0 calc(0px + (457 - 0) * (100vw - 640px) / (1000 - 640));
     margin: 10px 0;
   }
   
@@ -1022,7 +1022,6 @@ footer input {
   .pay-wrapper {
     display: grid;
     grid-template-columns: 21% 9% 21% 9% 21%;
-    ;
     grid-column-gap: 28px;
     margin: 0 calc(0px + (43 - 0) * (100vw - 640px) / (1000 - 640));
     overflow: hidden;
@@ -1234,9 +1233,9 @@ footer input {
 
   .pay-wrapper {
     display: grid;
-    grid-template-columns: 168px 168px 168px;
-    grid-column-gap: 42px;
-    margin: 0;
+    grid-template-columns: repeat(3, calc(50px + (168 - 50) * (100vw - 320px) / (640 - 320)));
+    grid-column-gap: calc(5px + (42 - 5) * (100vw - 320px) / (640 - 320));
+    margin: 0 calc(66px + (0 - 66) * (100vw - 320px) / (640 - 320));;
   }
 
   figure.arrows {
