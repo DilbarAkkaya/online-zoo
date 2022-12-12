@@ -830,7 +830,7 @@ footer input {
   }
 
   .title {
-    top: 54px;
+    top: calc(38px + (54 - 38) * (100vw - 640px) / (1000 - 640));
     left: calc(42px + (66 - 42) * (100vw - 640px) / (1000 - 640));
     font-size: calc(54.29px + (85.2 - 54.29) * (100vw - 640px) / (1000 - 640));
     line-height: calc(40.72px + (63.75 - 40.72) * (100vw - 640px) / (1000 - 640));
@@ -1068,13 +1068,13 @@ footer input {
 
   .container {
     top: 42px;
-    left: 312px
+    left: calc(154px + (312 - 154) * (100vw - 320px) / (640 - 320));
   }
 
-  .title {
+/*   .title {
     top: 38px;
-    left: 42px
-  }
+    left: 42px;
+  } */
 
   .designed,
   .header-wrapper>nav {
@@ -1273,7 +1273,7 @@ footer input {
     align-items: center;
     column-gap: 0;
     row-gap: 15px;
-    height: 354px;
+    height: 358px;
   }
 
   .card-content {
@@ -1342,7 +1342,7 @@ footer input {
   .social-list {
     position: absolute;
     top: 3px;
-    left: 574px;
+    left: calc(55px + (574 - 55) * (100vw - 320px) / (640 - 320));
   }
 
   .footer-subscribe {
@@ -1384,8 +1384,8 @@ footer input {
   }
 
   .title {
-    top: 20px;
-    left: 20px;
+/*     top: calc(0px + (20 - 0) * (100vw - 320px) / (640 - 320));
+    left: calc(0px + (20 - 0) * (100vw - 320px) / (640 - 320)); */
     font-size: 28px;
   }
 
