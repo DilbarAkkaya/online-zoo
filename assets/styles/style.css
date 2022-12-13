@@ -211,7 +211,9 @@ h1 {
   left: calc(500px + (587 - 500) * (100vw - 1000px) / (1600 - 1000));
   ;
 }
-
+.backstage-section{
+  padding-top: calc(99px + (140 - 99) * (100vw - 1000px) / (1600 - 1000));
+}
 .flower-backstage {
   position: relative;
 }
@@ -219,10 +221,10 @@ h1 {
 .flower-backstage::before {
   content: "";
   position: absolute;
-  top: 1.875rem;
+  top: -122px;
   left: 0;
   width: 100%;
-  height: 105%;
+  height: 148%;
   background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
   z-index: -1;
 }
@@ -254,7 +256,7 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: calc(30px + (87 - 30) * (100vw - 1000px) / (1600 - 1000));
-  padding-top: calc(100px + (140 - 101) * (100vw - 1000px) / (1600 - 1000));
+ /* padding-top: calc(99px + (140 - 99) * (100vw - 1000px) / (1600 - 1000));*/
 }
 
 h2 {
@@ -824,11 +826,16 @@ footer input {
   .content-wrapper {
     max-width: 940px;
   }
-
+  .designed {
+    margin-left: calc(0px + (95 - 0) * (100vw - 640px) / (1000 - 640));
+  }
   .section-watch {
     background-position: center;
   }
-
+  .circle {
+    width: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+    height: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+  }
   .title {
     top: calc(38px + (54 - 38) * (100vw - 640px) / (1000 - 640));
     left: calc(42px + (66 - 42) * (100vw - 640px) / (1000 - 640));
@@ -848,7 +855,7 @@ footer input {
 
   .container {
     top: 69px;
-    left: calc(350px + (425 - 350) * (100vw - 640px) / (1000 - 640));
+    left: calc(312px + (425 - 312) * (100vw - 640px) / (1000 - 640));
   }
 
   .watch-button {
@@ -861,14 +868,22 @@ footer input {
   }
 
   .img-container {
-    flex: 0 0 calc(300px + (457 - 300) * (100vw - 640px) / (1000 - 640));
+    flex: 0 0 calc(0px + (457 - 0) * (100vw - 640px) / (1000 - 640));
     margin: 10px 0;
   }
-
-  .backstage-wrapper {
-    padding-top: calc(54px + (99 - 54) * (100vw - 640px) / (1000 - 640));
+  
+  .card-content {
+      padding: 10px 15px 19px 16px;
   }
 
+/* 
+  .backstage-wrapper {
+    padding-top: calc(54px + (99 - 54) * (100vw - 640px) / (1000 - 640));
+  } */
+/* 
+  .backstage-wrapper {
+    padding-top: 99px;
+  } */
   h2 {
     padding-bottom: 22px;
   }
@@ -879,8 +894,8 @@ footer input {
 
   .grid {
     grid-column-gap: 27px;
-    grid-template-columns: repeat(3, 31.15%);
-    grid-row-gap: calc(165px + (20 - 92) * (100vw - 640px) / (1000 - 640));
+    grid-template-columns: repeat(3, calc(150px + (294 - 150) * (100vw - 640px) / (1000 - 640)));
+    grid-row-gap: calc(20px + (92 - 20) * (100vw - 640px) / (1000 - 640));
     grid-auto-flow: row;
     overflow: hidden;
   }
@@ -900,11 +915,13 @@ footer input {
   }
 
   .arrow {
-    top: 509px;
+    top:calc(420px + (509 - 420) * (100vw - 640px) / (1000 - 640));
+    width: calc(0px + (62 - 0) * (100vw - 640px) / (1000 - 640));
+    height: calc(0px + (62 - 0) * (100vw - 640px) / (1000 - 640));
   }
 
   .card {
-    width: calc(222px + (293 - 222) * (100vw - 640px) / (1000 - 640));
+    width: 100%;
   }
 
   .card h5 {
@@ -928,7 +945,7 @@ footer input {
   }
 
   .friend-wrapper h2 {
-    padding: 0 0 23px 190px;
+    padding: 0 0 23px calc(100px + (190 - 100) * (100vw - 640px) / (1000 - 640));;
   }
 
   .friend-wrapper p:nth-child(1) {
@@ -1012,7 +1029,6 @@ footer input {
   .pay-wrapper {
     display: grid;
     grid-template-columns: 21% 9% 21% 9% 21%;
-    ;
     grid-column-gap: 28px;
     margin: 0 calc(0px + (43 - 0) * (100vw - 640px) / (1000 - 640));
     overflow: hidden;
@@ -1062,8 +1078,8 @@ footer input {
   }
 
   .circle {
-    width: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
-    height: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
+    width: calc(119.09px + (237.6 - 119.09) * (100vw - 320px) / (640 - 320));
+    height: calc(119.09px + (237.6 - 119.09) * (100vw - 320px) / (640 - 320));
   }
 
   .container {
@@ -1107,7 +1123,7 @@ footer input {
   .watch-button {
     margin: 0px 300px 40px 0px;
     margin-bottom: calc(-113px + (40 - (-113)) * (100vw - 320px) / (640 - 320));
-    margin-right: calc(0px + (300px - 0) * (100vw - 320px) / (640 - 320));
+    margin-right: calc(0px + (300 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .favorite-container {
@@ -1124,16 +1140,19 @@ footer input {
 
   .flower-backstage::before {
     background: no-repeat url(../../assets/images/flower_2.jpg) right;
-    background-size: 132px;
-    top: 0;
+    background-size: calc(35px + (132 - 35) * (100vw - 320px) / (640 - 320));
+    top: -58px;
     left: 0;
-    height: 110%;
+    height: 127%;
+}
+  .backstage-section{
+    padding-top: calc(105px + (58 - 105) * (100vw - 320px) / (640 - 320));
+    padding-left: 0;
   }
-
-  .backstage-wrapper {
+/*   .backstage-wrapper {
     padding-top: calc(60px + (140 - 60) * (100vw - 640px) / (1000 - 640));
     padding-left: 3px;
-  }
+  } */
 
   .text-container p:nth-child(2) {
     padding-bottom: 31px;
@@ -1149,13 +1168,14 @@ footer input {
   }
 
   .card {
-    width: calc(285px + (294 - 285) * (100vw - 640px) / (1000 - 640));
+    width: 100%;
+ /*   width: calc(294px + (285 - 294) * (100vw - 320px) / (640 - 320));*/
     padding-bottom: 4px;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 48%);
-    grid-row-gap: calc(92px + (20 - 98) * (100vw - 640px) / (1000 - 640));
+    grid-template-columns: repeat(2, calc(200px + (285 - 200) * (100vw - 320px) / (640 - 320)));
+    grid-row-gap: calc(20px + (92 - 20) * (100vw - 320px) / (640 - 320));
     grid-column-gap: 30px;
   }
 
@@ -1168,15 +1188,18 @@ footer input {
   }
 
   .prev {
-    right: calc(150px + (315 - 150) * (100vw - 320px) / (640 - 320));
+    right: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .arrow {
-    top: 420px;
+   /* top: calc(0px + (420 - 0) * (100vw - 480px) / (640 - 480));*/
+      width: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
+      height: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
+  
   }
 
   .next {
-    left: calc(150px + (315 - 150) * (100vw - 320px) / (640 - 320));
+    left: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .grid figure:nth-child(6),
@@ -1185,7 +1208,7 @@ footer input {
   }
 
   .favorite-button {
-    margin: 60px 0px 100px 152px;
+    margin: 60px 0px 100px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .friend-wrapper {
@@ -1196,10 +1219,14 @@ footer input {
   .friend-wrapper h2 {
     font-size: 42px;
     line-height: 50.4px;
-    padding: 0 0 0px 100px;
+    padding: 0 0 0px calc(34px + (100 - 34) * (100vw - 320px) / (640 - 320));
     padding-top: calc(4px + (41 - 4) * (100vw - 640px) / (1000 - 640));
   }
 
+  h2 {
+    font-size: calc(24px + (48 - 24) * (100vw - 320px) / (640 - 320));
+    line-height: calc(28.8px + (57.6 - 28.8) * (100vw - 320px) / (640 - 320));
+  }
   .favorite-wrapper::before {
     top: 459px;
     background-size: 175px;
@@ -1217,9 +1244,9 @@ footer input {
 
   .pay-wrapper {
     display: grid;
-    grid-template-columns: 168px 168px 168px;
-    grid-column-gap: 42px;
-    margin: 0;
+    grid-template-columns: repeat(3, calc(50px + (168 - 50) * (100vw - 320px) / (640 - 320)));
+    grid-column-gap: calc(5px + (42 - 5) * (100vw - 320px) / (640 - 320));
+    margin: 0 calc(66px + (0 - 66) * (100vw - 320px) / (640 - 320));;
   }
 
   figure.arrows {
@@ -1230,20 +1257,22 @@ footer input {
     content: "";
     position: absolute;
     top: -28px;
-    right: 394px;
+    right: calc(0px + (394 - 0) * (100vw - 320px) / (640 - 320));
     width: 100%;
     height: 100%;
     background: no-repeat url(../../assets/icons/arrow_gr.svg) right;
+    background-size: calc(5px + (85 - 5) * (100vw - 320px) / (640 - 320));
   }
 
   figure.pic::after {
     content: "";
     position: absolute;
     top: -29px;
-    right: 186px;
+    right: calc(0px + (186 - 0) * (100vw - 320px) / (640 - 320));
     width: 100%;
     height: 100%;
     background: no-repeat url(../../assets/icons/arrow_gr.svg) right;
+    background-size: calc(0px + (85 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .friend-wrapper p:nth-child(2) {
@@ -1261,11 +1290,11 @@ footer input {
   }
 
   h3 {
-    padding: 30px 0px 20px 197px;
+    padding: 30px 0px 20px calc(81px + (197 - 81) * (100vw - 320px) / (640 - 320));
   }
 
   .freind-button {
-    margin: 44px 0 60px 151px;
+    margin: 44px 0 60px calc(1px + (151 - 1) * (100vw - 320px) / (640 - 320));
   }
 
   .testimonials-cards {
@@ -1298,7 +1327,7 @@ footer input {
   }
 
   .feedback-button {
-    margin: 39px 0 80px 180px;
+    margin: 39px 0 80px calc(31px + (180 - 31) * (100vw - 320px) / (640 - 320));
     width: 240px;
     height: 54px;
   }
@@ -1342,7 +1371,7 @@ footer input {
   .social-list {
     position: absolute;
     top: 3px;
-    left: calc(55px + (574 - 55) * (100vw - 320px) / (640 - 320));
+    left: calc(54px + (573 - 54) * (100vw - 320px) / (640 - 320));
   }
 
   .footer-subscribe {
@@ -1353,6 +1382,7 @@ footer input {
 
   .subscribe-text {
     padding: 0;
+    font-size: calc(0px + (16 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .footer-list {
@@ -1366,6 +1396,13 @@ footer input {
 
   footer nav ul li:nth-child(1) {
     margin-left: 0;
+  }
+}
+@media(max-width: 480px) {
+  .social-list{
+    display: flex;
+    flex-direction: row;
+    left: 90px;
   }
 }
 
@@ -1402,15 +1439,15 @@ footer input {
     background-size: 392px;
   }
 
-  .backstage-wrapper {
+/*   .backstage-section{
     padding-top: calc(105px + (140 - 105) * (100vw - 320px) / (640 - 320));
     padding-left: 0;
-  }
+  } */
 
   .flower-backstage::before {
     background: no-repeat url(../../assets/images/flower_3.jpg) right;
     background-size: 35px;
-    top: -122px;
+    top: -202px;
   }
 
   .text-container p:nth-child(2) {
@@ -1429,7 +1466,9 @@ footer input {
   .favorite-container {
     padding-top: 15px;
   }
-
+  .footer .logo {
+    margin-bottom: 260px;
+}
   .card {
     margin: 0 auto;
     width: calc(285px + (294 - 285) * (100vw - 320px) / (640 - 320));
@@ -1456,6 +1495,7 @@ footer input {
   .friend-wrapper p:nth-child(4) {
     display: none;
   }
+
 
   .friend-section {
     padding: 5px 10px 20px 10px;
@@ -1542,7 +1582,10 @@ footer input {
   }
 
   .footer-button {
-    margin: 32px 0 141px 0;
+    position: absolute;
+    width: 298px;
+    top: 90px;
+    left: -33px;
   }
 
   .circle {
@@ -1586,7 +1629,9 @@ footer input {
     line-height: 22.82px;
     color: var(--white);
     text-align: center;
-    padding: 9px 0 0 0;
+    padding: 9px 0 0 0px;
+    position: relative;
+    left: 86px;
   }
 
   .footer .logo-ico {
@@ -1608,7 +1653,7 @@ footer input {
     position: absolute;
     width: 300px;
     bottom: 0px;
-    right: -14px;
+    right: -95px;
   }
 
   .footer-list li {
@@ -1626,6 +1671,5 @@ footer input {
     top: calc(273px + (347 - 298) * (100vw - 320px) / (640 - 320));
     left: 0px;
     background-size: calc(58px + (200 - 56) * (100vw - 320px) / (640 - 320));
-    transform: rotate(-1deg);
   }
 }
