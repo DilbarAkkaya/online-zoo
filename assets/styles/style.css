@@ -221,11 +221,12 @@ h1 {
 .flower-backstage::before {
   content: "";
   position: absolute;
-  top: -122px;
+  top:  calc(-300px + (-122 - (-300)) * (100vw - 1000px) / (1600 - 1000));
   left: 0;
   width: 100%;
   height: 148%;
   background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
+  background-size:  calc(0px + (204 - 0) * (100vw - 1000px) / (1600 - 1000));
   z-index: -1;
 }
 
