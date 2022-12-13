@@ -945,7 +945,7 @@ footer input {
   }
 
   .friend-wrapper h2 {
-    padding: 0 0 23px 190px;
+    padding: 0 0 23px calc(100px + (190 - 100) * (100vw - 640px) / (1000 - 640));;
   }
 
   .friend-wrapper p:nth-child(1) {
@@ -1174,7 +1174,7 @@ footer input {
   }
 
   .grid {
-    grid-template-columns: repeat(2, calc(150px + (285 - 150) * (100vw - 320px) / (640 - 320)));
+    grid-template-columns: repeat(2, calc(200px + (285 - 200) * (100vw - 320px) / (640 - 320)));
     grid-row-gap: calc(20px + (92 - 20) * (100vw - 320px) / (640 - 320));
     grid-column-gap: 30px;
   }
@@ -1188,18 +1188,18 @@ footer input {
   }
 
   .prev {
-    right: calc(0px + (315 - 0) * (100vw - 320px) / (640 - 320));
+    right: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .arrow {
-    top: calc(0px + (420 - 0) * (100vw - 320px) / (640 - 320));
-      width: calc(0px + (62 - 0) * (100vw - 320px) / (640 - 320));
-      height: calc(0px + (62 - 0) * (100vw - 320px) / (640 - 320));
+   /* top: calc(0px + (420 - 0) * (100vw - 480px) / (640 - 480));*/
+      width: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
+      height: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
   
   }
 
   .next {
-    left: calc(0px + (315 - 0) * (100vw - 320px) / (640 - 320));
+    left: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .grid figure:nth-child(6),
@@ -1219,7 +1219,7 @@ footer input {
   .friend-wrapper h2 {
     font-size: 42px;
     line-height: 50.4px;
-    padding: 0 0 0px 100px;
+    padding: 0 0 0px calc(34px + (100 - 34) * (100vw - 320px) / (640 - 320));
     padding-top: calc(4px + (41 - 4) * (100vw - 640px) / (1000 - 640));
   }
 
@@ -1290,7 +1290,7 @@ footer input {
   }
 
   h3 {
-    padding: 30px 0px 20px 197px;
+    padding: 30px 0px 20px calc(81px + (197 - 81) * (100vw - 320px) / (640 - 320));
   }
 
   .freind-button {
@@ -1347,7 +1347,7 @@ footer input {
 
   .footer-button {
     margin: 0 0 129px 0;
-    width: calc(298px + (298 - 298) * (100vw - 320px) / (640 - 320));
+    width: 298px;
     height: 54px;
   }
 
@@ -1371,7 +1371,7 @@ footer input {
   .social-list {
     position: absolute;
     top: 3px;
-    left: calc(55px + (574 - 55) * (100vw - 320px) / (640 - 320));
+    left: calc(54px + (573 - 54) * (100vw - 320px) / (640 - 320));
   }
 
   .footer-subscribe {
@@ -1382,6 +1382,7 @@ footer input {
 
   .subscribe-text {
     padding: 0;
+    font-size: calc(0px + (16 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .footer-list {
@@ -1395,6 +1396,13 @@ footer input {
 
   footer nav ul li:nth-child(1) {
     margin-left: 0;
+  }
+}
+@media(max-width: 480px) {
+  .social-list{
+    display: flex;
+    flex-direction: row;
+    left: 90px;
   }
 }
 
@@ -1458,7 +1466,9 @@ footer input {
   .favorite-container {
     padding-top: 15px;
   }
-
+  .footer .logo {
+    margin-bottom: 260px;
+}
   .card {
     margin: 0 auto;
     width: calc(285px + (294 - 285) * (100vw - 320px) / (640 - 320));
@@ -1572,8 +1582,10 @@ footer input {
   }
 
   .footer-button {
-    margin: 32px 0 141px 0;
-    width: calc(0px + (298 - 0) * (100vw - 0px) / (320 - 0));
+    position: absolute;
+    width: 298px;
+    top: 90px;
+    left: -33px;
   }
 
   .circle {
@@ -1617,7 +1629,9 @@ footer input {
     line-height: 22.82px;
     color: var(--white);
     text-align: center;
-    padding: 9px 0 0 0;
+    padding: 9px 0 0 0px;
+    position: relative;
+    left: 86px;
   }
 
   .footer .logo-ico {
@@ -1639,7 +1653,7 @@ footer input {
     position: absolute;
     width: 300px;
     bottom: 0px;
-    right: -14px;
+    right: -95px;
   }
 
   .footer-list li {
@@ -1657,6 +1671,5 @@ footer input {
     top: calc(273px + (347 - 298) * (100vw - 320px) / (640 - 320));
     left: 0px;
     background-size: calc(58px + (200 - 56) * (100vw - 320px) / (640 - 320));
-    transform: rotate(-1deg);
   }
 }
