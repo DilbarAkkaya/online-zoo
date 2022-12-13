@@ -400,22 +400,34 @@ p[title] {
 .favorite-wrapper::before {
   content: "";
   position: absolute;
-  top: 505px;
-  left: 0;
+  top: calc(517px + (505 - 517) * (100vw - 1000px) / (1600 - 1000));
+
+  left: 0px;
   width: 100%;
   height: 100%;
   background: no-repeat url(../../assets/images/strelitzia.jpg) right;
+  background-size:363px;
   z-index: -1;
+}
+/* .favorite-wrapper::before {
+  top: calc(400px + (517 - 400) * (100vw - 640px) / (1000 - 640));
+  background-size: calc(175px + (243 - 175) * (100vw - 640px) / (1000 - 640));
 }
 
 .favorite-wrapper::after {
+  top: calc(424px + (509 - 424) * (100vw - 640px) / (1000 - 640));
+  background: no-repeat url(../../assets/images/palm_1.jpg) left;
+  background-size: calc(192px + (189 - 192) * (100vw - 640px) / (1000 - 640));
+} */
+.favorite-wrapper::after {
   content: "";
   position: absolute;
-  top: 25.75rem;
-  left: 0;
+  top: calc(509px + (412 - 509) * (100vw - 1000px) / (1600 - 1000));
+  left: 0px;
   width: 100%;
   height: 100%;
   background: no-repeat url(../../assets/images/palm_foto.jpg) left;
+  background-size: 292px;
   z-index: -1;
 }
 
@@ -1296,7 +1308,7 @@ footer input {
   }
 
   .freind-button {
-    margin: 44px 0 60px calc(1px + (151 - 1) * (100vw - 320px) / (640 - 320));
+    margin: 44px 0 60px calc(0px + (151 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .testimonials-cards {
@@ -1477,19 +1489,19 @@ footer input {
   }
 
   .favorite-wrapper::before {
-    top: 741px;
+    top: 750px;
     left: 0;
     background: no-repeat url(../../assets/images/strelitzia_1.jpg) right;
   }
 
   .favorite-wrapper::after {
-    top: 736px;
-    left: -11px;
-    background-size: 70px;
+    top: 745px;
+    left: -13px;
+    background-size: 67px;
   }
 
   .favorite-button {
-    margin: 19px 0px 74px 0px;
+    margin: 22px 0px 60px 0px;
   }
 
   .arrow,
@@ -1517,7 +1529,7 @@ footer input {
   }
 
   .friend-wrapper {
-    padding-top: calc(22px + (30 - 22) * (100vw - 320px) / (640 - 320));
+    padding-top: calc(35px + (30 - 35) * (100vw - 320px) / (640 - 320));
     padding-left: 0;
   }
 
@@ -1525,7 +1537,7 @@ footer input {
     text-align: center;
     font-size: 18px;
     line-height: 21.6px;
-    padding: 11px 5px 0 1px;
+    padding: 11px 2px 0 1px;
   }
 
   .pay-wrapper {
@@ -1540,11 +1552,11 @@ footer input {
 
   figure.pic::after {
     height: 4%;
-    top: 275px;
-    left: 95px;
-    transform: rotate(86deg);
-    background-size: 85px;
-  }
+    top: 292px;
+    left: 89px;
+    transform: rotate(85deg);
+    background-size: 92px;
+}
 
   .pay-wrapper figure:last-child {
     margin-top: -9px;
@@ -1555,16 +1567,17 @@ footer input {
   }
 
   figure.pic::before {
-    top: 508px;
+    top: 521px;
     height: 7%;
-    left: 90px;
-    transform: rotate(84deg);
-    background-size: calc(0px + (85 - 0) * (100vw - 321px) / (640 - 321));
-  }
+    left: 91px;
+    transform: rotate(86deg);
+    background-size: 85px;
+}
 
 
   .freind-button {
-    margin: 40px 0px 41px 1px;
+    margin: 40px 0px 41px 0px;
+    width: 296px;
   }
 
   .testimonials-wrapper h3 {
