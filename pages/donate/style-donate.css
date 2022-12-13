@@ -321,7 +321,7 @@ input[type="number"]:focus {
 
 @media (max-width:1000px) {
   .header .nav {
-    margin: 0 90px 0 0;
+    margin: 0 calc(0px + (90 - 0) * (100vw - 640px) / (1000 - 640)) 0 0;
   }
 
   .background {
@@ -497,8 +497,11 @@ input[type="number"]:focus {
   }
 
   .pic {
-    padding: 51px 0 0 27px;
+    padding: 51px 0 0 calc(0px + (27 - 0) * (100vw - 320px) / (640 - 320));;
     margin-bottom: 41px;
+  }
+  .pic img {
+    width: calc(160px + (284 - 160) * (100vw - 320px) / (640 - 320));;
   }
 
   .friend-wrapper p:nth-child(1) {
@@ -508,6 +511,7 @@ input[type="number"]:focus {
   .diet {
     font-size: 16px;
     padding: 0;
+    margin-right: calc(0px + (47 - 0) * (100vw - 320px) / (640 - 320));;
   }
 
   .diet::after {
@@ -526,7 +530,7 @@ input[type="number"]:focus {
 
   .bar-line {
     width: calc(280px + (524 - 280) * (100vw - 320px) / (640 - 320));
-    left: 40px;
+    left: calc(0px + (40 - 0) * (100vw - 320px) / (640 - 320));;
   }
 
   .progress-bar ul {
@@ -561,7 +565,7 @@ input[type="number"]:focus {
   }
 
   .freind-button {
-    margin: 28px 0 32px 152px;
+    margin: 28px 0 32px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));;
   }
 
   .footer-wrapper {
