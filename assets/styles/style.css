@@ -1067,8 +1067,19 @@ footer input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-  .active-nav{
+  .active{
     right: 0;
+  }
+  .active .line-1 {
+    transform: rotateZ(-405deg) translate(-10px, 10px);
+  }
+
+  .active .line-2 {
+    opacity: 0;
+  }
+
+  .active .line-3 {
+    transform: rotateZ(405deg) translate(-9px, -9px);
   }
   .section-watch {
     height: calc(186px + (373 - 186) * ((100vw - 320px) / (640 - 320)));
