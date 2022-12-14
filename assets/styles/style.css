@@ -1072,20 +1072,43 @@ footer input {
   }
   .active .line-1 {
     transform: rotateZ(-405deg) translate(-10px, 10px);
+    background-color: var(--black);
   }
 
   .active .line-2 {
     opacity: 0;
+    
   }
  .open {
     flex-direction: column;
     width: 600px;
     height: 325px;
-    background-color: red;
+    background-color: var(--white);
+    color: var(--black);
+    align-items: flex-start;
+    padding: 10px;
   }
-
+  .open h1 {
+    font-size: 0;
+  }
+  .open h1::after{
+    content: "Designed by ©";
+    position: absolute;
+    top: 283px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+  }
+  .open .logo{
+background-color: #d31414;
+  }
+.open .logo img {
+  display: none;
+}
   .active .line-3 {
     transform: rotateZ(405deg) translate(-9px, -9px);
+    background-color: var(--black);
   }
   .section-watch {
     height: calc(186px + (373 - 186) * ((100vw - 320px) / (640 - 320)));
