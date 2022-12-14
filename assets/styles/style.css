@@ -1059,6 +1059,9 @@ footer input {
 }
 
 @media (max-width: 640px) {
+  .active-nav{
+    right: 0;
+  }
   .section-watch {
     height: calc(186px + (373 - 186) * ((100vw - 320px) / (640 - 320)));
     position: relative;
