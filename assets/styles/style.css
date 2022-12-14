@@ -1077,6 +1077,12 @@ footer input {
   .active .line-2 {
     opacity: 0;
   }
+ .open {
+    flex-direction: column;
+    width: 600px;
+    height: 325px;
+    background-color: red;
+  }
 
   .active .line-3 {
     transform: rotateZ(405deg) translate(-9px, -9px);
