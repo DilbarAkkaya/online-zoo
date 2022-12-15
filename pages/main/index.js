@@ -4,13 +4,14 @@ const nav = document.querySelector('.nav');
 const navList = list.cloneNode(1);
 navList.children[0].classList.remove('active-link')
 const links = navList.querySelectorAll('.nav-link')
-const logoImg = document.querySelector('.header .logo img');
+const logoImg = document.querySelector('.header .logo-link img');
+const logoImgCopy = logoImg.cloneNode(1)
 const modal = document.querySelector('.modal');
-
+console.log(logoImgCopy)
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
   modal.classList.toggle('hide');
-  navList.prepend(logoImg);
+  navList.prepend(logoImgCopy);
   navList.classList.add('open');
 links.forEach(element => {
   element.classList.add('open')
@@ -18,9 +19,13 @@ links.forEach(element => {
   modal.append(navList);
  if (burgerMenu.classList.contains('active')){
   document.querySelector('.header-wrapper').style.justifyContent = 'end';
-  logoImg.src='../../assets/icons/logo_modal.svg'
- } 
+  logoImgCopy.src='../../assets/icons/logo_modal.svg'
+ } else {
+ document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
+ logoImgCopy.className='logo-link img'
 
+ logoImgCopy.src='../../assets/icons/logo.svg'
+ }
 
 
 });
