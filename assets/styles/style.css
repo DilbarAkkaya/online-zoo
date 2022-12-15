@@ -844,6 +844,14 @@ footer input {
   animation-name: move-right;
   animation-duration: 3s;
 }
+@keyframes move-left {
+  from {left: -1160px;}
+  to {left: 0;}
+}
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
+}
 
 @media (max-width:1000px) {
   .content-wrapper {
