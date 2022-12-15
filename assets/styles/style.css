@@ -1100,8 +1100,12 @@ footer input {
     font-weight: 500;
     color: var(--black);
   }
+
   .open .logo{
-background-color: #d31414;
+    width: 80px;
+    height: 55px;
+background: url(../../assets/icons/logo_modal.svg) no-repeat;
+background-size: 80%;
   }
 .open .logo img {
   display: none;
