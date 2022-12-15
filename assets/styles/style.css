@@ -330,9 +330,9 @@ p[title] {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 31.1%);
+  grid-template-columns: repeat(3, 367px);
   grid-row-gap: calc(90px + (20 - 90) * (100vw - 1000px) / (1600 - 1000));
-  grid-column-gap: 34px;
+  grid-column-gap: 30px;
 }
 
 .favorite-container {
@@ -345,7 +345,7 @@ p[title] {
 }
 
 .card {
-  width: calc(294px + (366 - 294) * (100vw - 1000px) / (1600 - 1000));
+  width: calc(294px + (365 - 294) * (100vw - 1000px) / (1600 - 1000));
   border: 1px solid var(--orange);
   border-radius: 5px;
   padding-bottom: 10px;
@@ -834,6 +834,15 @@ footer input {
 
 .hamburger-menu {
   display: none;
+}
+
+@keyframes move-right {
+  from {left: -1160px;}
+  to {left: -2320px;}
+}
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
 }
 
 @media (max-width:1000px) {
