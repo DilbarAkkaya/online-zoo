@@ -1071,7 +1071,7 @@ footer input {
     right: 0;
   }
   .active .line-1 {
-    transform: rotateZ(-405deg) translate(-10px, 10px);
+    transform: rotateZ(-405deg) translate(-11px, 6px);
     background-color: var(--black);
   }
 
@@ -1081,7 +1081,7 @@ footer input {
   }
  .open {
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     height: 325px;
     background-color: var(--white);
     color: var(--black);
@@ -1101,17 +1101,17 @@ footer input {
     color: var(--black);
   }
 
-  .open .logo{
+/*   .open .logo{
     width: 80px;
     height: 55px;
 background: url(../../assets/icons/logo_modal.svg) no-repeat;
 background-size: 80%;
-  }
-.open .logo img {
+  } */
+/* .open .logo img {
   display: none;
-}
+} */
   .active .line-3 {
-    transform: rotateZ(405deg) translate(-9px, -9px);
+    transform: rotateZ(405deg) translate(0px, 5px);
     background-color: var(--black);
   }
   .section-watch {
