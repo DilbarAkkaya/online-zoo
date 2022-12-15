@@ -201,7 +201,8 @@ h1 {
 
 .watch-button {
   margin: 0 0 0 calc(425px + (664 - 425) * (100vw - 1000px) / (1600 - 1000));
-  margin-bottom: calc(47px + (100 - 47) * (100vw - 1000px) / (1600 - 1000));;
+  margin-bottom: calc(47px + (100 - 47) * (100vw - 1000px) / (1600 - 1000));
+  ;
 }
 
 
@@ -211,9 +212,11 @@ h1 {
   left: calc(500px + (587 - 500) * (100vw - 1000px) / (1600 - 1000));
   ;
 }
-.backstage-section{
+
+.backstage-section {
   padding-top: calc(99px + (140 - 99) * (100vw - 1000px) / (1600 - 1000));
 }
+
 .flower-backstage {
   position: relative;
 }
@@ -221,12 +224,12 @@ h1 {
 .flower-backstage::before {
   content: "";
   position: absolute;
-  top:  calc(-300px + (-122 - (-300)) * (100vw - 1000px) / (1600 - 1000));
+  top: calc(-300px + (-122 - (-300)) * (100vw - 1000px) / (1600 - 1000));
   left: 0;
   width: 100%;
   height: 148%;
   background: no-repeat url(../../assets/images/flower_foto1.jpg) right;
-  background-size:  calc(0px + (204 - 0) * (100vw - 1000px) / (1600 - 1000));
+  background-size: calc(0px + (204 - 0) * (100vw - 1000px) / (1600 - 1000));
   z-index: -1;
 }
 
@@ -257,7 +260,6 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: calc(30px + (87 - 30) * (100vw - 1000px) / (1600 - 1000));
- /* padding-top: calc(99px + (140 - 99) * (100vw - 1000px) / (1600 - 1000));*/
 }
 
 h2 {
@@ -301,7 +303,7 @@ p[title] {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  top:  calc(545px + (581 - 545) * (100vw - 1000px) / (1600 - 1000));
+  top: calc(545px + (581 - 545) * (100vw - 1000px) / (1600 - 1000));
 }
 
 .prev {
@@ -406,19 +408,10 @@ p[title] {
   width: 100%;
   height: 100%;
   background: no-repeat url(../../assets/images/strelitzia.jpg) right;
-  background-size:363px;
+  background-size: 363px;
   z-index: -1;
 }
-/* .favorite-wrapper::before {
-  top: calc(400px + (517 - 400) * (100vw - 640px) / (1000 - 640));
-  background-size: calc(175px + (243 - 175) * (100vw - 640px) / (1000 - 640));
-}
 
-.favorite-wrapper::after {
-  top: calc(424px + (509 - 424) * (100vw - 640px) / (1000 - 640));
-  background: no-repeat url(../../assets/images/palm_1.jpg) left;
-  background-size: calc(192px + (189 - 192) * (100vw - 640px) / (1000 - 640));
-} */
 .favorite-wrapper::after {
   content: "";
   position: absolute;
@@ -839,16 +832,20 @@ footer input {
   .content-wrapper {
     max-width: 940px;
   }
+
   .designed {
     margin-left: calc(0px + (95 - 0) * (100vw - 640px) / (1000 - 640));
   }
+
   .section-watch {
     background-position: center;
   }
+
   .circle {
     width: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
     height: calc(237.6px + (367 - 237.6) * (100vw - 640px) / (1000 - 640));
   }
+
   .title {
     top: calc(38px + (54 - 38) * (100vw - 640px) / (1000 - 640));
     left: calc(42px + (66 - 42) * (100vw - 640px) / (1000 - 640));
@@ -873,7 +870,8 @@ footer input {
 
   .watch-button {
     margin: 0 0 47px calc(0px + (425 - 0) * (100vw - 640px) / (1000 - 640));
-    margin-right: calc(300px + (0 - 300) * (100vw - 640px) / (1000 - 640));;
+    margin-right: calc(300px + (0 - 300) * (100vw - 640px) / (1000 - 640));
+    ;
   }
 
   .flower-backstage::before {
@@ -884,19 +882,11 @@ footer input {
     flex: 0 0 calc(0px + (457 - 0) * (100vw - 640px) / (1000 - 640));
     margin: 10px 0;
   }
-  
+
   .card-content {
-      padding: 10px 15px 19px 16px;
+    padding: 10px 15px 19px 16px;
   }
 
-/* 
-  .backstage-wrapper {
-    padding-top: calc(54px + (99 - 54) * (100vw - 640px) / (1000 - 640));
-  } */
-/* 
-  .backstage-wrapper {
-    padding-top: 99px;
-  } */
   h2 {
     padding-bottom: 22px;
   }
@@ -929,7 +919,7 @@ footer input {
   }
 
   .arrow {
-    top:calc(420px + (509 - 420) * (100vw - 750px) / (1000 - 750));
+    top: calc(420px + (509 - 420) * (100vw - 750px) / (1000 - 750));
     width: calc(10px + (62 - 10) * (100vw - 750px) / (1000 - 750));
     height: calc(10px + (62 - 10) * (100vw - 750px) / (1000 - 750));
   }
@@ -959,7 +949,8 @@ footer input {
   }
 
   .friend-wrapper h2 {
-    padding: 0 0 23px calc(100px + (190 - 100) * (100vw - 640px) / (1000 - 640));;
+    padding: 0 0 23px calc(100px + (190 - 100) * (100vw - 640px) / (1000 - 640));
+    ;
   }
 
   .friend-wrapper p:nth-child(1) {
@@ -1066,10 +1057,12 @@ footer input {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
-  .active{
+  }
+
+  .active {
     right: 0;
   }
+
   .active .line-1 {
     transform: rotateZ(-405deg) translate(-11px, 6px);
     background-color: var(--black);
@@ -1077,9 +1070,9 @@ footer input {
 
   .active .line-2 {
     opacity: 0;
-    
   }
- .open {
+
+  .open {
     flex-direction: column;
     width: 100%;
     height: 325px;
@@ -1088,10 +1081,12 @@ footer input {
     align-items: flex-start;
     padding: 10px;
   }
+
   .open h1 {
     font-size: 0;
   }
-  .open h1::after{
+
+  .open h1::after {
     content: "Designed by ©";
     position: absolute;
     top: 283px;
@@ -1101,19 +1096,11 @@ footer input {
     color: var(--black);
   }
 
-/*   .open .logo{
-    width: 80px;
-    height: 55px;
-background: url(../../assets/icons/logo_modal.svg) no-repeat;
-background-size: 80%;
-  } */
-/* .open .logo img {
-  display: none;
-} */
   .active .line-3 {
     transform: rotateZ(405deg) translate(0px, 5px);
     background-color: var(--black);
   }
+
   .section-watch {
     height: calc(186px + (373 - 186) * ((100vw - 320px) / (640 - 320)));
     position: relative;
@@ -1155,11 +1142,6 @@ background-size: 80%;
     top: 42px;
     left: calc(154px + (312 - 154) * (100vw - 320px) / (640 - 320));
   }
-
-/*   .title {
-    top: 38px;
-    left: 42px;
-  } */
 
   .designed,
   .header-wrapper>nav {
@@ -1213,15 +1195,12 @@ background-size: 80%;
     top: -58px;
     left: 0;
     height: 127%;
-}
-  .backstage-section{
+  }
+
+  .backstage-section {
     padding-top: calc(105px + (58 - 105) * (100vw - 320px) / (640 - 320));
     padding-left: 0;
   }
-/*   .backstage-wrapper {
-    padding-top: calc(60px + (140 - 60) * (100vw - 640px) / (1000 - 640));
-    padding-left: 3px;
-  } */
 
   .text-container p:nth-child(2) {
     padding-bottom: 31px;
@@ -1238,7 +1217,6 @@ background-size: 80%;
 
   .card {
     width: 100%;
- /*   width: calc(294px + (285 - 294) * (100vw - 320px) / (640 - 320));*/
     padding-bottom: 4px;
   }
 
@@ -1262,9 +1240,8 @@ background-size: 80%;
 
   .arrow {
     top: calc(400px + (420 - 400) * (100vw - 480px) / (640 - 480));
-      width: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
-      height: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
-  
+    width: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
+    height: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .next {
@@ -1296,6 +1273,7 @@ background-size: 80%;
     font-size: calc(24px + (48 - 24) * (100vw - 320px) / (640 - 320));
     line-height: calc(28.8px + (57.6 - 28.8) * (100vw - 320px) / (640 - 320));
   }
+
   .favorite-wrapper::before {
     top: 459px;
     background-size: 175px;
@@ -1315,7 +1293,7 @@ background-size: 80%;
     display: grid;
     grid-template-columns: repeat(3, calc(50px + (168 - 50) * (100vw - 320px) / (640 - 320)));
     grid-column-gap: calc(5px + (42 - 5) * (100vw - 320px) / (640 - 320));
-    margin: 0 calc(66px + (0 - 66) * (100vw - 320px) / (640 - 320));;
+    margin: 0 calc(66px + (0 - 66) * (100vw - 320px) / (640 - 320));
   }
 
   figure.arrows {
@@ -1467,8 +1445,9 @@ background-size: 80%;
     margin-left: 0;
   }
 }
+
 @media(max-width: 480px) {
-  .social-list{
+  .social-list {
     display: flex;
     flex-direction: row;
     left: 90px;
@@ -1490,8 +1469,6 @@ background-size: 80%;
   }
 
   .title {
-/*     top: calc(0px + (20 - 0) * (100vw - 320px) / (640 - 320));
-    left: calc(0px + (20 - 0) * (100vw - 320px) / (640 - 320)); */
     font-size: 28px;
   }
 
@@ -1507,11 +1484,6 @@ background-size: 80%;
     height: 221px;
     background-size: 392px;
   }
-
-/*   .backstage-section{
-    padding-top: calc(105px + (140 - 105) * (100vw - 320px) / (640 - 320));
-    padding-left: 0;
-  } */
 
   .flower-backstage::before {
     background: no-repeat url(../../assets/images/flower_3.jpg) right;
@@ -1535,9 +1507,11 @@ background-size: 80%;
   .favorite-container {
     padding-top: 15px;
   }
+
   .footer .logo {
     margin-bottom: 260px;
-}
+  }
+
   .card {
     margin: 0 auto;
     width: calc(285px + (294 - 285) * (100vw - 320px) / (640 - 320));
@@ -1611,7 +1585,7 @@ background-size: 80%;
     left: 89px;
     transform: rotate(85deg);
     background-size: 92px;
-}
+  }
 
   .pay-wrapper figure:last-child {
     margin-top: -9px;
@@ -1627,7 +1601,7 @@ background-size: 80%;
     left: 91px;
     transform: rotate(86deg);
     background-size: 85px;
-}
+  }
 
 
   .freind-button {
