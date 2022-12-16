@@ -54,7 +54,7 @@ if (event.animationName === 'move-left') {
   let leftItems = sliderLeft.innerHTML;
   sliderCenter.innerHTML = leftItems;
  sliderLeft.innerHTML = '';
- createSliderLeft();
+//createSliderLeft();
 
 } else {
   slideContainer.classList.remove('transition-right');
@@ -66,9 +66,11 @@ if (event.animationName === 'move-left') {
   btnNext.addEventListener('click', moveRight);
 });
 
-const createCard = ()=>{
-  let randomNum = Math.floor(7*Math.random());
-  console.log(randomNum)
+const randomEl = Math.floor(Math.random()*data.length);
+console.log(randomEl)
+
+/* const createCard = (data)=>{
+let randomNum = Math.floor(7*Math.random());
   const card = document.createElement('figure');
   card.setAttribute('data-id', `${data[randomNum].id}`);
   card.classList.add('card', 'slide');
@@ -86,14 +88,11 @@ const createCard = ()=>{
                       </div>
                     </figcaption>`);
 return card
-}
+} */
 
-const createSliderLeft = ()=> {
-  let leftArr = [];
-  for (let i=0; i<data.length-2; i++){
-    let leftSliderItem = createCard();
-    sliderLeft.appendChild(leftSliderItem);
-   // leftArr.push(leftSliderItem);
-   
-  }
-}
+/*     let leftSliderItem = createCard(data);
+    leftArr.push(leftSliderItem);
+      if(!leftArr.includes(leftSliderItem.dataset)){
+        console.log(leftSliderItem.dataset.id)
+        sliderLeft.appendChild(leftSliderItem)
+      } */

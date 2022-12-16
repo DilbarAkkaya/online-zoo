@@ -37,7 +37,7 @@ const data = [
   {
     id: 5,
     petName: 'Penguins',
-    image: '../../assets/icons/meet-fish_icon.svg',
+    image: '../../assets/icons/ping.jpg',
     location: 'Native to Antarctica',
     imageFood: '../../assets/icons/meet-fish_icon.svg',
   },
