@@ -67,7 +67,7 @@ if (event.animationName === 'move-left') {
 });
 
 const getRandomEl = (arr) => {
- return Math.floor(Math.random()*arr.length);
+ return arr[Math.floor(Math.random()*arr.length)];
 } 
 
 const shuffle = (arr) => {
@@ -78,7 +78,9 @@ const shuffledData = shuffle(data);
 console.log(shuffledData)
 
 const randomShEl = getRandomEl(shuffledData);
-console.log(randomShEl)
+console.log(randomShEl.petName)
+
+
 /* const createCard = (data)=>{
 let randomNum = Math.floor(7*Math.random());
   const card = document.createElement('figure');
