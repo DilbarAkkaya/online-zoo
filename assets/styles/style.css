@@ -304,6 +304,7 @@ p[title] {
   background-repeat: no-repeat;
   border: none;
   top: calc(545px + (581 - 545) * (100vw - 1000px) / (1600 - 1000));
+  transition: transform 0.4s, background-color 0.5s;
 }
 
 .prev {
@@ -324,8 +325,9 @@ p[title] {
   cursor: pointer;
 }
 
-.active {
+.arrow:active,.prev:active, .next:active {
   background-color: var(--green);
+  transform: scale(1.1);
 }
 
 .grid {
