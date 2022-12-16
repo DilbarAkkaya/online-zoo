@@ -49,14 +49,17 @@ btnNext.addEventListener('click', moveRight);
 
 slideContainer.addEventListener('animationend', (event)=>{
 if (event.animationName === 'move-left') {
-  
+
   slideContainer.classList.remove('transition-left');
-  const leftItems = sliderLeft.innerHTML;
+  let leftItems = sliderLeft.innerHTML;
   sliderCenter.innerHTML = leftItems;
+ sliderLeft.innerHTML = '';
+ sliderLeft.appendChild(createSliderLeft());
+ console.log(createSliderLeft())
 
 } else {
   slideContainer.classList.remove('transition-right');
-  const rightItems = sliderRight.innerHTML;
+  let rightItems = sliderRight.innerHTML;
   sliderCenter.innerHTML = rightItems;
 
 }
@@ -65,6 +68,24 @@ if (event.animationName === 'move-left') {
 });
 
 const createCard = ()=>{
-console.log(data)
+  let randomNum = Math.floor(7*Math.random());
+  console.log(randomNum)
+  const card = document.createElement('figure');
+  card.setAttribute('data-id', `${data[randomNum].id}`)
+  card.insertAdjacentHTML('beforeend', `
+  <div class="img-wrap">
+                      <img src=${data[randomNum].image} alt="alligator" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>${data[randomNum].petName}</h5>
+                        <p>${data[randomNum].location}</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src=${data[randomNum].imageFood} alt="meat" class="meat">
+                      </div>
+                    </figcaption>`);
+return card
 }
-createCard()
+
+
