@@ -56,3 +56,5 @@ const data = [
     imageFood: '../../assets/icons/banana-bamboo_icon.svg',
   },
 ]
+
+export default data;
