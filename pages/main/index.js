@@ -66,8 +66,9 @@ if (event.animationName === 'move-left') {
   btnNext.addEventListener('click', moveRight);
 });
 
-const randomEl = Math.floor(Math.random()*data.length);
-console.log(randomEl);
+const getRandomEl = (arr) => {
+ return Math.floor(Math.random()*arr.length);
+} 
 
 const shuffle = (arr) => {
 return arr.sort(()=>Math.random()-0.5)
@@ -76,6 +77,8 @@ return arr.sort(()=>Math.random()-0.5)
 const shuffledData = shuffle(data);
 console.log(shuffledData)
 
+const randomShEl = getRandomEl(shuffledData);
+console.log(randomShEl)
 /* const createCard = (data)=>{
 let randomNum = Math.floor(7*Math.random());
   const card = document.createElement('figure');
