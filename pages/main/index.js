@@ -70,7 +70,8 @@ const createCard = ()=>{
   let randomNum = Math.floor(7*Math.random());
   console.log(randomNum)
   const card = document.createElement('figure');
-  card.setAttribute('data-id', `${data[randomNum].id}`)
+  card.setAttribute('data-id', `${data[randomNum].id}`);
+  card.classList.add('card', 'slide');
   card.insertAdjacentHTML('beforeend', `
   <div class="img-wrap">
                       <img src=${data[randomNum].image} alt="alligator" class="card-img">
