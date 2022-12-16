@@ -67,7 +67,14 @@ if (event.animationName === 'move-left') {
 });
 
 const randomEl = Math.floor(Math.random()*data.length);
-console.log(randomEl)
+console.log(randomEl);
+
+const shuffle = (arr) => {
+return arr.sort(()=>Math.random()-0.5)
+}
+
+const shuffledData = shuffle(data);
+console.log(shuffledData)
 
 /* const createCard = (data)=>{
 let randomNum = Math.floor(7*Math.random());
