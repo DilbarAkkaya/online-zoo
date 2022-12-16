@@ -33,17 +33,19 @@ const btnNext = document.getElementById('next');
 const slideContainer = document.getElementById('slide-container');
 const sliderLeft = document.querySelector('#slider-left');
 const sliderRight = document.querySelector('#slider-right');
-const sliderCenter = document.querySelector('#slider-center');
+let sliderCenter = document.querySelector('#slider-center');
 
 const moveLeft = ()=>{
   slideContainer.classList.add('transition-left');
-  btnPrev.removeEventListener('click', moveLeft)
+  btnPrev.removeEventListener('click', moveLeft);
+  btnNext.removeEventListener('click', moveRight);
 };
 btnPrev.addEventListener('click', moveLeft);
 
 const moveRight = ()=>{
   slideContainer.classList.add('transition-right');
-  btnNext.removeEventListener('click', moveRight)
+  btnPrev.removeEventListener('click', moveLeft);
+  btnNext.removeEventListener('click', moveRight);
 };
 btnNext.addEventListener('click', moveRight);
 
@@ -55,14 +57,15 @@ if (event.animationName === 'move-left') {
   sliderCenter.innerHTML = leftItems;
  sliderLeft.innerHTML = '';
 //createCard(randomShEl);
- console.log('ok')
 createSliderLeft();
-
 } else {
   slideContainer.classList.remove('transition-right');
   let rightItems = sliderRight.innerHTML;
-  sliderCenter.innerHTML = rightItems;
 
+  sliderCenter.innerHTML = rightItems;
+  console.log(sliderCenter)
+  sliderRight.innerHTML = '';
+  createSliderRight();
 }
   btnPrev.addEventListener('click', moveLeft);
   btnNext.addEventListener('click', moveRight);
@@ -107,12 +110,24 @@ const createSliderLeft = ()=>{
 
    // const randomShEl = getRandomEl(shuffledData);
         let leftSliderItem = createCard(shuffledData[i]);
-        console.log(leftSliderItem)
     // leftArr.push(leftSliderItem);
     /*    if(!leftArr.includes(leftSliderItem.dataset)){
          console.log(leftSliderItem.dataset.id) */
          sliderLeft.appendChild(leftSliderItem)
   }
+}
+  const createSliderRight = ()=>{
+    const shuffledData = shuffle(data);
+    for(let i=0; i<shuffledData.length-2;i++){
+  
+     // const randomShEl = getRandomEl(shuffledData);
+          let rightSliderItem = createCard(shuffledData[i]);
+          console.log(rightSliderItem)
+      // leftArr.push(leftSliderItem);
+      /*    if(!leftArr.includes(leftSliderItem.dataset)){
+           console.log(leftSliderItem.dataset.id) */
+           sliderRight.appendChild(rightSliderItem)
+    }
  // leftArr=[];
 
       }
