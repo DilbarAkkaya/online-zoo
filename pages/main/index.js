@@ -54,8 +54,7 @@ if (event.animationName === 'move-left') {
   let leftItems = sliderLeft.innerHTML;
   sliderCenter.innerHTML = leftItems;
  sliderLeft.innerHTML = '';
- sliderLeft.appendChild(createSliderLeft());
- console.log(createSliderLeft())
+ createSliderLeft();
 
 } else {
   slideContainer.classList.remove('transition-right');
@@ -88,4 +87,12 @@ const createCard = ()=>{
 return card
 }
 
-
+const createSliderLeft = ()=> {
+  let leftArr = [];
+  for (let i=0; i<data.length-2; i++){
+    let leftSliderItem = createCard();
+    sliderLeft.appendChild(leftSliderItem);
+   // leftArr.push(leftSliderItem);
+   
+  }
+}
