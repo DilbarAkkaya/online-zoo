@@ -99,7 +99,7 @@ const createCard = (randomShEl)=> {
                         <p>${randomShEl.location}</p>
                       </div>
                       <div class="desc-icon">
-                        <img src=${randomShEl.imageFood} alt="meat" class="meat">
+                        <img src=${randomShEl.imageFood} alt=${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meatfish" : "banana"} class=${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meat" : "veget"}>
                       </div>
                     </figcaption>`);
 return card
