@@ -26,3 +26,26 @@ burgerMenu.addEventListener('click', () => {
     logoImgCopy.src = '../../assets/icons/logo.svg'
   }
 });
+
+const btnPrev = document.getElementById('prev');
+const btnNext = document.getElementById('next');
+const slideContainer = document.getElementById('slide-container');
+
+const moveLeft = ()=>{
+  slideContainer.classList.add('transition-left');
+  btnPrev.removeEventListener('click', moveLeft)
+};
+btnPrev.addEventListener('click', moveLeft);
+
+const moveRight = ()=>{
+  slideContainer.classList.add('transition-right');
+  btnNext.removeEventListener('click', moveRight)
+};
+btnNext.addEventListener('click', moveRight);
+
+slideContainer.addEventListener('animationend', ()=>{
+  slideContainer.classList.remove('transition-left');
+  slideContainer.classList.remove('transition-right');
+  btnPrev.addEventListener('click', moveLeft);
+  btnNext.addEventListener('click', moveRight);
+});
