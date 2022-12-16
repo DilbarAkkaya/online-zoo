@@ -44,8 +44,13 @@ const moveRight = ()=>{
 btnNext.addEventListener('click', moveRight);
 
 slideContainer.addEventListener('animationend', ()=>{
-  slideContainer.classList.remove('transition-left');
+if (animation.animationName === 'move-left') {
+  slideContainer.classList.remove('transition-left')
+} else {
   slideContainer.classList.remove('transition-right');
+}
+ 
+
   btnPrev.addEventListener('click', moveLeft);
   btnNext.addEventListener('click', moveRight);
 });
