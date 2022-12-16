@@ -89,6 +89,8 @@ const createCard = (randomShEl)=> {
   const card = document.createElement('figure');
   card.setAttribute('data-id', `${randomShEl.id}`);
   card.classList.add('card', 'slide');
+  const alt = `${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meatfish" : "banana"}`;
+  const imageClass = `${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meat" : "veget"}`;
   card.insertAdjacentHTML('beforeend', `
   <div class="img-wrap">
                       <img src=${randomShEl.image} alt="alligator" class="card-img">
@@ -99,7 +101,7 @@ const createCard = (randomShEl)=> {
                         <p>${randomShEl.location}</p>
                       </div>
                       <div class="desc-icon">
-                        <img src=${randomShEl.imageFood} alt=${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meatfish" : "banana"} class=${randomShEl.imageFood==='../../assets/icons/meet-fish_icon.svg'? "meat" : "veget"}>
+                        <img src=${randomShEl.imageFood} alt=${alt} class=${imageClass}>
                       </div>
                     </figcaption>`);
 return card
