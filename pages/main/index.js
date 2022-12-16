@@ -54,7 +54,9 @@ if (event.animationName === 'move-left') {
   let leftItems = sliderLeft.innerHTML;
   sliderCenter.innerHTML = leftItems;
  sliderLeft.innerHTML = '';
-//createSliderLeft();
+//createCard(randomShEl);
+ console.log('ok')
+createSliderLeft();
 
 } else {
   slideContainer.classList.remove('transition-right');
@@ -66,21 +68,54 @@ if (event.animationName === 'move-left') {
   btnNext.addEventListener('click', moveRight);
 });
 
-const getRandomEl = (arr) => {
+/* const getRandomEl = (arr) => {
  return arr[Math.floor(Math.random()*arr.length)];
-} 
+}  */
 
 const shuffle = (arr) => {
 return arr.sort(()=>Math.random()-0.5)
 }
 
-const shuffledData = shuffle(data);
-console.log(shuffledData)
-
+/* const shuffledData = shuffle(data);
+console.log(shuffledData) */
+/* 
 const randomShEl = getRandomEl(shuffledData);
-console.log(randomShEl.petName)
+console.log(randomShEl.petName */
 
+const createCard = (randomShEl)=> {
+  const card = document.createElement('figure');
+  card.setAttribute('data-id', `${randomShEl.id}`);
+  card.classList.add('card', 'slide');
+  card.insertAdjacentHTML('beforeend', `
+  <div class="img-wrap">
+                      <img src=${randomShEl.image} alt="alligator" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>${randomShEl.petName}</h5>
+                        <p>${randomShEl.location}</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src=${randomShEl.imageFood} alt="meat" class="meat">
+                      </div>
+                    </figcaption>`);
+return card
+}
+const createSliderLeft = ()=>{
+  const shuffledData = shuffle(data);
+  for(let i=0; i<shuffledData.length-2;i++){
 
+   // const randomShEl = getRandomEl(shuffledData);
+        let leftSliderItem = createCard(shuffledData[i]);
+        console.log(leftSliderItem)
+    // leftArr.push(leftSliderItem);
+    /*    if(!leftArr.includes(leftSliderItem.dataset)){
+         console.log(leftSliderItem.dataset.id) */
+         sliderLeft.appendChild(leftSliderItem)
+  }
+ // leftArr=[];
+
+      }
 /* const createCard = (data)=>{
 let randomNum = Math.floor(7*Math.random());
   const card = document.createElement('figure');
