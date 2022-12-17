@@ -117,7 +117,26 @@ inputRange.addEventListener('input', (event)=>{
   const value = event.target.value;
   const WIDTH_IN_1600 = 296;
   const WIDTH_IN_1000 = 320;
-switch(value) {
+/*   const calc = 'calc(940px + (1160 - 940) * (100vw - 1000px) / (1600 - 1000))'; */
+  switch(value) {
+    case '0': testimonialsContainer.style.left = '0px';
+    break;
+    case '1': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '2': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '3': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '4': testimonialsContainer.style.left =`calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '5': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '6': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+    case '7': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+    break;
+  }
+/* switch(value) {
   case '0': testimonialsContainer.style.left = '0px';
   break;
   case '1': testimonialsContainer.style.left = -value*WIDTH_IN_1600 + 'px';
@@ -134,7 +153,7 @@ switch(value) {
   break;
   case '7': testimonialsContainer.style.left = -value*WIDTH_IN_1600 + 'px';
   break;
-}
+} */
 if(mediaQuery.matches) {
   switch(value) {
     case '0': testimonialsContainer.style.left = '0px';
