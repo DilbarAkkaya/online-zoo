@@ -154,7 +154,7 @@ inputRange.addEventListener('input', (event)=>{
   case '7': testimonialsContainer.style.left = -value*WIDTH_IN_1600 + 'px';
   break;
 } */
-if(mediaQuery.matches) {
+/* if(mediaQuery.matches) {
   switch(value) {
     case '0': testimonialsContainer.style.left = '0px';
     break;
@@ -173,5 +173,6 @@ if(mediaQuery.matches) {
     case '7': testimonialsContainer.style.left = -value*WIDTH_IN_1000 + 'px';
     break;
 }
-}}
+} */
+}
 )
