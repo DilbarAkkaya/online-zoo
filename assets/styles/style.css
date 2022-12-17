@@ -537,7 +537,7 @@ h3 {
   column-gap: 30px;
   margin-bottom: 12px;
   padding: 2px;
-  width: 1160px;
+  max-width: 1160px;
   position: relative;
 }
 
@@ -1046,13 +1046,17 @@ footer input {
     padding-top: calc(60px + (100 - 60) * (100vw - 640px) / (1000 - 640));
     padding-bottom: 32px;
   }
+  .testimonials-cards {
+    max-width: 940px;
+    column-gap: 29px;
+  }
 
   .card-content:last-child {
     display: none;
   }
 
   .card-content {
-    flex-basis: 293px;
+    flex-basis: 291px;
   }
 
   .feedback {
