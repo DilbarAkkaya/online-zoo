@@ -107,3 +107,11 @@ const createSliderRight = () => {
     sliderRight.appendChild(rightSliderItem)
   }
 }
+
+const inputRange = document.querySelector('.volume');
+console.log(inputRange)
+const testimonialsContainer = document.querySelector('.testimonials-cards');
+const value = inputRange.value;
+inputRange.addEventListener('input', (event)=>{
+console.log(event)
+})

@@ -539,6 +539,7 @@ h3 {
   overflow: hidden;
   padding: 2px;
   width: 1160px;
+  position: relative;
 }
 
 .feedback-button {
@@ -650,18 +651,22 @@ input[type='range'] {
   position: relative;
   background: var(--gray1);
   border-radius: 5px;
-  background-image: linear-gradient(var(--orange-light), var(--orange));
+/*   background-image: linear-gradient(var(--orange-light), var(--orange));
   background-size: 19% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 input[type='range']:hover {
-  background-image: linear-gradient(var(--orange-dark), var(--red));
+/*   background-image: linear-gradient(var(--orange-dark), var(--red)); */
   cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  display: none;
+  width: 12.5%;
+  height: 6px;
+  background-color: var(--orange-light);
+  appearance: none;
+  border-radius: 5px;
 }
 
 input[type="range"]::before {
