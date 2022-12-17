@@ -113,7 +113,8 @@ console.log(inputRange.value)
 const testimonialsContainer = document.querySelector('.testimonials-cards');
 const mediaQuery = window.matchMedia('(max-width: 1000px)');
 
-inputRange.addEventListener('input',changeInput)
+inputRange.addEventListener('input',changeInput);
+window.onresize = changeInput
 /* switch(value) {
   case '0': testimonialsContainer.style.left = '0px';
   break;

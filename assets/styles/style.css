@@ -534,7 +534,7 @@ h3 {
 }
 
 .testimonials-cards {
-  column-gap: 30px;
+  column-gap: 2.5%;
   margin-bottom: 12px;
   padding: 2px;
   max-width: calc(940px + (1160 - 940) * (100vw - 1000px) / (1600 - 1000));
@@ -553,14 +553,14 @@ h3 {
   position: relative;
   background: var(--light-gray);
   border-radius: 20px;
-  padding: 15px 15px 19px 16px;
+  padding: 15px 0.6% 19px 0.7%;
   font-size: 15px;
   font-weight: 300;
   line-height: var(--line18px);
   letter-spacing: 0em;
   text-align: left;
   flex-shrink: 0;
-  flex-basis: 266px;
+  flex-basis: 22.93%;
   flex-grow: 0;
 }
 
