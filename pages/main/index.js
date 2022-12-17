@@ -117,6 +117,19 @@ inputRange.addEventListener('input', (event)=>{
 switch(value) {
   case '0': testimonialsContainer.style.left = '0px';
   break;
-  case '1': testimonialsContainer.style.left = -value + 292 + 'px';
+  case '1': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '2': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '3': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '4': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '5': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '6': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
+  case '7': testimonialsContainer.style.left = -value*296 + 'px';
+  break;
 }
 })
