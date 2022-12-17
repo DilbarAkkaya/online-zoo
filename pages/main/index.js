@@ -109,9 +109,14 @@ const createSliderRight = () => {
 }
 
 const inputRange = document.querySelector('.volume');
-console.log(inputRange)
+console.log(inputRange.value)
 const testimonialsContainer = document.querySelector('.testimonials-cards');
-const value = inputRange.value;
+
 inputRange.addEventListener('input', (event)=>{
-console.log(event)
+  const value = event.target.value;
+switch(value) {
+  case '0': testimonialsContainer.style.left = '0px';
+  break;
+  case '1': testimonialsContainer.style.left = -value + 292 + 'px';
+}
 })
