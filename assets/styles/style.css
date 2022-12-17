@@ -534,7 +534,7 @@ h3 {
 }
 
 .testimonials-cards {
-  column-gap: 2.5%;
+  column-gap: 2.7%;
   margin-bottom: 12px;
   padding: 2px;
   max-width: calc(940px + (1160 - 940) * (100vw - 1000px) / (1600 - 1000));
