@@ -26,6 +26,13 @@ burgerMenu.addEventListener('click', () => {
     logoImgCopy.src = '../../assets/icons/logo.svg'
   }
 });
+document.addEventListener('click', (event)=>{
+  if(event.target.classList.contains('modal')) {
+    burgerMenu.classList.remove('active');
+    modal.classList.add('hide');
+    document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
+  }
+})
 
 const btnPrev = document.getElementById('prev');
 const btnNext = document.getElementById('next');
