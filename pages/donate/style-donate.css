@@ -102,7 +102,7 @@ span {
   height: 14px;
   position: absolute;
   top: 190px;
-  left: 386px;
+  left: calc(197px + (386 - 197) * (100vw - 640px) / (1000 - 640));
 }
 
 .diet p:nth-child(2) {
@@ -346,7 +346,7 @@ input[type="number"]:focus {
   }
 
   .pic {
-    padding: 58px 0 0px 148px;
+    padding: 58px 0 0px calc(27px + (148 - 27) * (100vw - 640px) / (1000 - 640));
   }
 
   .diet {
@@ -452,9 +452,12 @@ input[type="number"]:focus {
   }
 
   .background {
-    background-position: 38% 101%;
-    background-size: 217%;
-    min-height: calc(187px + (370 - 187) * (100vw - 320px) / (640 - 320));
+    height: 399px;
+    max-width: 640px;
+    background: url(../../assets/images/panda_donat.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 85%;
+    min-height: 0;
   }
 
   .friend-title h3:nth-child(1) {
@@ -464,6 +467,7 @@ input[type="number"]:focus {
   }
 
   .friend-section {
+    margin-top: -30px;
     padding: 30px 21px 79px 19px;
   }
 
@@ -511,12 +515,12 @@ input[type="number"]:focus {
   .diet {
     font-size: 16px;
     padding: 0;
-    margin-right: calc(0px + (47 - 0) * (100vw - 320px) / (640 - 320));;
+    margin-right: calc(47px + (89 - 47) * (100vw - 320px) / (640 - 320));;
   }
 
   .diet::after {
-    top: 181px;
-    left: 197px;
+    top: calc(71px + (181 - 71) * (100vw - 320px) / (640 - 320));
+    left: calc(92px + (197 - 92) * (100vw - 320px) / (640 - 320));
   }
 
   .amount-wrapper {
@@ -549,6 +553,10 @@ input[type="number"]:focus {
 
   .bar-label {
     left: -8px;
+    font-size: calc(13px + (26 - 13) * (100vw - 320px) / (640 - 320));
+    background: url(../../assets/icons/dollar.svg) no-repeat;
+    background-position: left calc(14px + (8 - 14) * (100vw - 320px) / (640 - 320));
+    background-size: calc(5px + (10 - 5) * (100vw - 320px) / (640 - 320));;
   }
 
   .amount-input {
@@ -561,11 +569,11 @@ input[type="number"]:focus {
   }
 
   .share {
-    padding: 0 0 0 150px;
+    padding: 0 0 0 calc(0px + (150 - 0) * (100vw - 320px) / (640 - 320));
   }
 
   .freind-button {
-    margin: 28px 0 32px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));;
+    margin: 28px 0 32px calc(0px + (152 - 0) * (100vw - 350px) / (640 - 350));;
   }
 
   .footer-wrapper {
@@ -579,8 +587,8 @@ input[type="number"]:focus {
   .footer .nav .list {
     padding-left: 0;
     bottom: 12px;
-    right: 42px;
-    width: 293px;
+    right: calc(30px + (42 - (30)) * (100vw - 480px) / (640 - 480));
+    width: calc(277px + (293 - 277) * (100vw - 320px) / (640 - 320));;
   }
 }
 
@@ -594,13 +602,17 @@ input[type="number"]:focus {
   }
 
   .background {
-    background-position: 33% 106%;
-    background-size: 241%;
-    min-height: calc(0px + (219 - 0) * (100vw - 0px) / (320 - 0));
+    height: 254px;
+    max-width: 640px;
+    background: url(../../assets/images/panda_320.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 74%;
+    min-height: 0;
   }
 
   .friend-section {
     padding: 32px 12px 44px 10px;
+    margin-top: -33px;
   }
 
   .friend-title h3:nth-child(3) {
@@ -632,7 +644,7 @@ input[type="number"]:focus {
   }
 
   .friend-wrapper p:nth-child(2).sub {
-    padding: 9px 0 18px 0;
+    padding: 14px 0 18px 0;
     font-size: 16px;
   }
 
@@ -646,14 +658,16 @@ input[type="number"]:focus {
   }
 
   .diet {
-    margin-right: 47px;
-    padding: 26px 0 0 0;
+    margin-right: 44px;
+    padding: 19px 0 0 0;
   }
-
   .diet::after {
-    top: 71px;
-    left: 92px;
-  }
+    top: 64px;
+    left: 93px;
+}
+.pic img {
+  padding-left: 8px;
+}
 
   .desc {
     font-size: 9px;
@@ -711,7 +725,16 @@ input[type="number"]:focus {
   }
 
   .footer .nav .list {
-    right: 10px;
+    right: -74px;
     width: 277px;
+  }
+  .bar-radio {
+    appearance: none;
+    position: absolute;
+    top: -6px;
+    left: -16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
   }
 }
