@@ -440,7 +440,18 @@ input[type="number"]:focus {
   .hamburger-menu {
     display: flex;
   }
-
+  .open {
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    background-color: var(--white);
+    color: var(--black);
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .open h1::after {
+    left: 10px;
+}
   .header {
     position: fixed;
     padding: 1px 0 1px 0;
