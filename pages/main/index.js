@@ -7,19 +7,28 @@ const links = navList.querySelectorAll('.nav-link')
 const logoImg = document.querySelector('.header .logo-link img');
 const logoImgCopy = logoImg.cloneNode(1)
 const modal = document.querySelector('.modal');
+const arrows = document.querySelectorAll('.arrow');
 
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
   modal.classList.toggle('hide');
   navList.prepend(logoImgCopy);
   navList.classList.add('open');
-  links.forEach(element => {
+  const container = document.createElement('div');
+container.style.position = 'relative';
+container.append(navList);
+/*   links.forEach(element => {
     element.classList.add('open')
-  });
-  modal.append(navList);
+  }); */
+  modal.append(container);
+arrows.forEach(btn => {
+  btn.style.zIndex='0';
+})
   if (burgerMenu.classList.contains('active')) {
     document.querySelector('.header-wrapper').style.justifyContent = 'end';
-    logoImgCopy.src = '../../assets/icons/logo_modal.svg'
+    logoImgCopy.src = '../../assets/icons/logo_modal.svg';
+    logoImgCopy.style.width = '65px';
+    logoImgCopy.style.marginBottom = '16px';
   } else {
     document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
     logoImgCopy.className = 'logo-link img'
