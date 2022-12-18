@@ -443,14 +443,18 @@ input[type="number"]:focus {
   .open {
     flex-direction: column;
     width: 100%;
-    height: 325px;
+    height: 329px;
     background-color: var(--white);
     color: var(--black);
     align-items: flex-start;
-    padding: 10px;
+    padding: 10px 0 33px 10px;
+  }
+  .open a {
+    color: var(--black);
   }
   .open h1::after {
     left: 10px;
+    top: 267px;
 }
   .header {
     position: fixed;
