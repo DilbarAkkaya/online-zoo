@@ -35,3 +35,13 @@ document.addEventListener('click', (event)=>{
     document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
   }
 })
+
+const numberInput = document.querySelector('.amount-input');
+
+const radioInputs = document.querySelectorAll('.bar-radio');
+radioInputs.forEach(radioInput => {
+  radioInput.addEventListener('click', (event)=>{
+event.target.setAttribute('checked', true);
+numberInput.value = event.target.nextElementSibling.innerText
+  })
+})
