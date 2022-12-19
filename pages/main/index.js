@@ -202,6 +202,7 @@ const modalContent = document.querySelector('.modal-content');
 feedbackCards.forEach(feedback => {
   feedback.addEventListener('click', (event)=>{
     modalPopup.classList.remove('hide');
+    document.getElementsByTagName("body")[0].style.overflow = 'hidden';
     if(event.target.closest('.card-content')){
 /*     const text = event.target.querySelector('.feedback') */
   const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
@@ -216,6 +217,7 @@ closeButton.addEventListener('click', ()=>{
   console.log(modalContent.children[1])
  modalContent.removeChild(modalContent.children[1])
   modalPopup.classList.add('hide');
+  document.getElementsByTagName("body")[0].style.overflow = 'scroll';
 }
   
   )
@@ -223,6 +225,7 @@ closeButton.addEventListener('click', ()=>{
   document.addEventListener('click', (event)=>{
     if(event.target.classList.contains('modal-popup')) {
       modalPopup.classList.add('hide');
+      document.getElementsByTagName("body")[0].style.overflow = 'scroll';
       modalContent.removeChild(modalContent.children[1])
     }
   })

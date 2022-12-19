@@ -332,9 +332,9 @@ p[title] {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 367px);
+  grid-template-columns: repeat(3, 360px);
   grid-row-gap: calc(90px + (20 - 90) * (100vw - 1000px) / (1600 - 1000));
-  grid-column-gap: 30px;
+  grid-column-gap: 28px;
 }
 
 .favorite-container {
@@ -347,7 +347,7 @@ p[title] {
 }
 
 .card {
-  width: calc(294px + (365 - 294) * (100vw - 1000px) / (1600 - 1000));
+  width: calc(294px + (360 - 294) * (100vw - 1000px) / (1600 - 1000));
   border: 1px solid var(--orange);
   border-radius: 5px;
   padding-bottom: 10px;
@@ -430,6 +430,7 @@ p[title] {
   display: flex;
   position: relative;
   left: -1160px;
+  gap: 28px;
 }
 
 .slide-wrapper {
@@ -959,8 +960,8 @@ footer input {
   }
 
   .grid {
-    grid-column-gap: 29px;
-    grid-template-columns: repeat(3, calc(150px + (294 - 150) * (100vw - 640px) / (1000 - 640)));
+    grid-column-gap: 28px;
+    grid-template-columns: repeat(3, calc(150px + (286 - 150) * (100vw - 640px) / (1000 - 640)));
     grid-row-gap: calc(20px + (92 - 20) * (100vw - 640px) / (1000 - 640));
     grid-auto-flow: row;
   }
@@ -1297,9 +1298,9 @@ footer input {
   }
 
   .grid {
-    grid-template-columns: repeat(2, calc(200px + (285 - 200) * (100vw - 320px) / (640 - 320)));
+    grid-template-columns: repeat(2, calc(200px + (273 - 200) * (100vw - 320px) / (640 - 320)));
     grid-row-gap: calc(20px + (92 - 20) * (100vw - 320px) / (640 - 320));
-    grid-column-gap: 30px;
+    grid-column-gap: 28px;
   }
 
   .img-wrap {
@@ -1311,17 +1312,17 @@ footer input {
   }
 
   .prev {
-    right: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
+    right: calc(0px + (328 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .arrow {
-    top: calc(400px + (420 - 400) * (100vw - 480px) / (640 - 480));
+    top: calc(400px + (410 - 400) * (100vw - 480px) / (640 - 480));
     width: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
     height: calc(0px + (62 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .next {
-    left: calc(0px + (315 - 0) * (100vw - 480px) / (640 - 480));
+    left: calc(0px + (309 - 0) * (100vw - 480px) / (640 - 480));
   }
 
   .grid figure:nth-child(6),
@@ -1582,6 +1583,30 @@ footer input {
 }
 
 @media (max-width: 320px) {
+ .modal-dialog{
+  max-width: 250px;
+  margin: 35px 35px;
+ }
+ .modal-content {
+  width: 250px;
+  padding: 9px 15px 5px 10px;
+  height: 396px;
+  margin: 0;
+ }
+ .popup-close {
+  top: 4px;
+  right: 4px;
+ }
+ .card-content.opened {
+  height: 380px;
+  width: 240px;
+  overflow: visible;
+  max-height: 380px;
+  padding: 0px 5px 0px 5px;
+}
+.card-content.opened p{
+  font-size: 13px;
+}
   .content-wrapper {
     max-width: 300px;
   }
