@@ -37,8 +37,14 @@ document.addEventListener('click', (event)=>{
 })
 
 const numberInput = document.querySelector('.amount-input');
-
 const radioInputs = document.querySelectorAll('.bar-radio');
+numberInput.addEventListener('input', ()=>{
+  radioInputs.forEach(radioInput=>{
+    numberInput.value===radioInput.nextElementSibling.innerText ? radioInput.checked = true : radioInput.checked = false
+    })
+})
+
+
 radioInputs.forEach(radioInput => {
   radioInput.addEventListener('click', (event)=>{
 event.target.setAttribute('checked', true);
