@@ -861,7 +861,8 @@ footer input {
 
 .transition-right {
   animation-name: move-right;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes move-left {
@@ -876,7 +877,8 @@ footer input {
 
 .transition-left {
   animation-name: move-left;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @media (max-width:1000px) {
