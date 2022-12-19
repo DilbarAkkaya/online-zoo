@@ -203,11 +203,12 @@ feedbackCards.forEach(feedback => {
   feedback.addEventListener('click', (event)=>{
     modalPopup.classList.remove('hide');
     if(event.target.closest('.card-content')){
-      const cloneFeedback = event.target.cloneNode(true);
-      modalContent.appendChild(cloneFeedback)
+/*     const text = event.target.querySelector('.feedback') */
+  const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
+ // modalContent.appendChild(cloneFeedback)*/
+    modalContent.append(cloneFeedback)}
     }
-  })
-})
+)})
 
 closeButton.addEventListener('click', ()=>{
   modalPopup.classList.add('hide');
