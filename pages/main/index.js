@@ -209,7 +209,7 @@ feedbackCards.forEach(feedback => {
   cloneFeedback.classList.add('opened')
  // modalContent.appendChild(cloneFeedback)*/
     modalContent.append(cloneFeedback)}
-    console.log('ok')
+    console.log(document.getElementsByTagName("body")[0])
     }
 )})
 
