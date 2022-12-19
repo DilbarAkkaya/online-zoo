@@ -205,6 +205,7 @@ feedbackCards.forEach(feedback => {
     if(event.target.closest('.card-content')){
 /*     const text = event.target.querySelector('.feedback') */
   const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
+  cloneFeedback.classList.add('opened')
  // modalContent.appendChild(cloneFeedback)*/
     modalContent.append(cloneFeedback)}
     console.log('ok')
@@ -218,3 +219,10 @@ closeButton.addEventListener('click', ()=>{
 }
   
   )
+
+  document.addEventListener('click', (event)=>{
+    if(event.target.classList.contains('modal-popup')) {
+      modalPopup.classList.add('hide');
+      modalContent.removeChild(modalContent.children[1])
+    }
+  })

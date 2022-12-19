@@ -1433,6 +1433,15 @@ footer input {
     height: 109px;
     flex-shrink: 1;
   }
+  .card-content.opened{
+    height: 391px;
+    width: 267px;
+    overflow: hidden;
+  }
+  .card-content.opened .feedback{
+    overflow: visible;
+    padding-top: 10px;
+  }
   .card-content:last-child {
     display: flex;
   }
@@ -1534,19 +1543,22 @@ footer input {
     z-index: 100000;
   }
   .modal-dialog {
-    max-width: 500px;
+    max-width: 320px;
     margin: 40px auto;
 }
 .modal-content {
   position: relative;
-  width: 267px;
+  display: flex;
+  width: 320px;
   /* padding: 40px; */
   background-color: var(--white);
   border: 1px solid var(--black);
-  border-radius: 16px;
-  height: 361px;
+  /* border-radius: 16px; */
+  height: 430px;
   overflow-y: auto;
   margin: 0 auto;
+  justify-content: center;
+  padding: 20px 36px 17px 17px;
 }
 .popup-close {
   z-index: 10;
