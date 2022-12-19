@@ -42,6 +42,9 @@ numberInput.addEventListener('input', ()=>{
   radioInputs.forEach(radioInput=>{
     numberInput.value===radioInput.nextElementSibling.innerText ? radioInput.checked = true : radioInput.checked = false
     })
+    if(numberInput.value.length > numberInput.getAttribute('maxlength')) {
+      numberInput.value = numberInput.getAttribute('max')
+    }
 })
 
 
