@@ -193,3 +193,20 @@ function changeInput (event) {
     break;
   }
 }
+
+const modalPopup = document.querySelector('.modal-popup');
+const feedbackCards = document.querySelectorAll('.card-content');
+const closeButton =document.querySelector('.popup-close');
+const modalContent = document.querySelector('.modal-content');
+
+feedbackCards.forEach(feedback => {
+  feedback.addEventListener('click', ()=>{
+    modalPopup.classList.remove('hide')
+  })
+})
+
+closeButton.addEventListener('click', ()=>{
+  modalPopup.classList.add('hide');
+}
+  
+  )

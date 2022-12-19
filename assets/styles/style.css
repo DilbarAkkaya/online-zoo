@@ -1540,6 +1540,14 @@ footer input {
   max-height: 80vh;
   overflow-y: auto;
 }
+.popup-close {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: url(../../assets/icons/x_col.svg) no-repeat;
+}
 }
 
 @media(max-width: 480px) {
