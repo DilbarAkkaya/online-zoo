@@ -200,8 +200,12 @@ const closeButton =document.querySelector('.popup-close');
 const modalContent = document.querySelector('.modal-content');
 
 feedbackCards.forEach(feedback => {
-  feedback.addEventListener('click', ()=>{
-    modalPopup.classList.remove('hide')
+  feedback.addEventListener('click', (event)=>{
+    modalPopup.classList.remove('hide');
+    if(event.target.closest('.card-content')){
+      const cloneFeedback = event.target.cloneNode(true);
+      modalContent.appendChild(cloneFeedback)
+    }
   })
 })
 
