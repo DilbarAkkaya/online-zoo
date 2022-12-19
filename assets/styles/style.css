@@ -1433,6 +1433,9 @@ footer input {
     height: 109px;
     flex-shrink: 1;
   }
+  .card-content:last-child {
+    display: flex;
+  }
 
   .feedback {
     padding-left: 5px;
@@ -1546,6 +1549,7 @@ footer input {
   margin: 0 auto;
 }
 .popup-close {
+  z-index: 10;
   width: 14px;
   height: 14px;
   position: absolute;

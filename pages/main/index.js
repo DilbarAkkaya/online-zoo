@@ -207,10 +207,13 @@ feedbackCards.forEach(feedback => {
   const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
  // modalContent.appendChild(cloneFeedback)*/
     modalContent.append(cloneFeedback)}
+    console.log('ok')
     }
 )})
 
 closeButton.addEventListener('click', ()=>{
+  console.log(modalContent.children[1])
+ modalContent.removeChild(modalContent.children[1])
   modalPopup.classList.add('hide');
 }
   
