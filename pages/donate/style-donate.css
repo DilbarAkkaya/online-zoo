@@ -585,7 +585,12 @@ input[type="number"]:focus {
     padding-top: 0;
     padding-bottom: 7px;
   }
-
+  .bar-radio:checked+.bar-label:before {
+    left: 10px;
+}
+.bar-radio:checked+.bar-label:after {
+  left: 2px;
+}
   .bar-label {
     left: -8px;
     font-size: calc(13px + (26 - 13) * (100vw - 320px) / (640 - 320));
