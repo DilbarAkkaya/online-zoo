@@ -15,15 +15,15 @@ burgerMenu.addEventListener('click', () => {
   navList.prepend(logoImgCopy);
   navList.classList.add('open');
   const container = document.createElement('div');
-container.style.position = 'relative';
-container.append(navList);
-/*   links.forEach(element => {
-    element.classList.add('open')
-  }); */
+  container.style.position = 'relative';
+  container.append(navList);
+  /*   links.forEach(element => {
+      element.classList.add('open')
+    }); */
   modal.append(container);
-arrows.forEach(btn => {
-  btn.style.zIndex='0';
-})
+  arrows.forEach(btn => {
+    btn.style.zIndex = '0';
+  })
   if (burgerMenu.classList.contains('active')) {
     document.querySelector('.header-wrapper').style.justifyContent = 'end';
     logoImgCopy.src = '../../assets/icons/logo_modal.svg';
@@ -35,8 +35,8 @@ arrows.forEach(btn => {
     logoImgCopy.src = '../../assets/icons/logo.svg'
   }
 });
-document.addEventListener('click', (event)=>{
-  if(event.target.classList.contains('modal')) {
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal')) {
     burgerMenu.classList.remove('active');
     modal.classList.add('hide');
     document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
@@ -129,7 +129,7 @@ console.log(inputRange.value)
 const testimonialsContainer = document.querySelector('.testimonials-cards');
 const mediaQuery = window.matchMedia('(max-width: 1000px)');
 
-inputRange.addEventListener('input',changeInput);
+inputRange.addEventListener('input', changeInput);
 window.onresize = changeInput
 /* switch(value) {
   case '0': testimonialsContainer.style.left = '0px';
@@ -169,64 +169,65 @@ window.onresize = changeInput
     break;
 }
 } */
-function changeInput (event) {
+function changeInput(event) {
   const value = event.target.value;
   const WIDTH_IN_1600 = 296;
   const WIDTH_IN_1000 = 320;
-/*   const calc = 'calc(940px + (1160 - 940) * (100vw - 1000px) / (1600 - 1000))'; */
-  switch(value) {
+  /*   const calc = 'calc(940px + (1160 - 940) * (100vw - 1000px) / (1600 - 1000))'; */
+  switch (value) {
     case '0': testimonialsContainer.style.left = '0px';
-    break;
-    case '1': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '2': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '3': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '4': testimonialsContainer.style.left =`calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '5': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '6': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
-    case '7': testimonialsContainer.style.left = `calc(${-value*WIDTH_IN_1000}px + (${-value*WIDTH_IN_1600} - ${-value*WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
-    break;
+      break;
+    case '1': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '2': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '3': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '4': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '5': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '6': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
+    case '7': testimonialsContainer.style.left = `calc(${-value * WIDTH_IN_1000}px + (${-value * WIDTH_IN_1600} - ${-value * WIDTH_IN_1000}) * (100vw - 1000px) / (1600 - 1000))`;
+      break;
   }
 }
 
 const modalPopup = document.querySelector('.modal-popup');
 const feedbackCards = document.querySelectorAll('.card-content');
-const closeButton =document.querySelector('.popup-close');
+const closeButton = document.querySelector('.popup-close');
 const modalContent = document.querySelector('.modal-content');
 
 feedbackCards.forEach(feedback => {
-  feedback.addEventListener('click', (event)=>{
+  feedback.addEventListener('click', (event) => {
     modalPopup.classList.remove('hide');
     document.getElementsByTagName("body")[0].style.overflow = 'hidden';
-    if(event.target.closest('.card-content')){
-/*     const text = event.target.querySelector('.feedback') */
-  const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
-  cloneFeedback.classList.add('opened')
- // modalContent.appendChild(cloneFeedback)*/
-    modalContent.append(cloneFeedback)}
-    console.log(document.getElementsByTagName("body")[0])
+    if (event.target.closest('.card-content')) {
+      /*     const text = event.target.querySelector('.feedback') */
+      const cloneFeedback = (event.target.closest('.card-content')).cloneNode(true);
+      cloneFeedback.classList.add('opened')
+      // modalContent.appendChild(cloneFeedback)*/
+      modalContent.append(cloneFeedback)
     }
-)})
+    console.log(document.getElementsByTagName("body")[0])
+  }
+  )
+})
 
-closeButton.addEventListener('click', ()=>{
+closeButton.addEventListener('click', () => {
   console.log(modalContent.children[1])
- modalContent.removeChild(modalContent.children[1])
+  modalContent.removeChild(modalContent.children[1])
   modalPopup.classList.add('hide');
   document.getElementsByTagName("body")[0].style.overflow = 'scroll';
 }
-  
-  )
 
-  document.addEventListener('click', (event)=>{
-    if(event.target.classList.contains('modal-popup')) {
-      modalPopup.classList.add('hide');
-      document.getElementsByTagName("body")[0].style.overflow = 'scroll';
-      modalContent.removeChild(modalContent.children[1])
-    }
-  })
+)
 
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal-popup')) {
+    modalPopup.classList.add('hide');
+    document.getElementsByTagName("body")[0].style.overflow = 'scroll';
+    modalContent.removeChild(modalContent.children[1])
+  }
+})
