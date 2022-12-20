@@ -13,9 +13,6 @@ burgerMenu.addEventListener('click', () => {
   navList.prepend(logoImgCopy);
   navList.classList.add('open');
   navList.children[4].children[0].classList.remove('active-link');
-/*   links.forEach(element => {
-    element.classList.add('open')
-  }); */
   modal.append(navList);
   if (burgerMenu.classList.contains('active')) {
     document.querySelector('.header-wrapper').style.justifyContent = 'end';
@@ -28,8 +25,8 @@ burgerMenu.addEventListener('click', () => {
     logoImgCopy.src = '../../assets/icons/logo.svg'
   }
 });
-document.addEventListener('click', (event)=>{
-  if(event.target.classList.contains('modal')) {
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('modal')) {
     burgerMenu.classList.remove('active');
     modal.classList.add('hide');
     document.querySelector('.header-wrapper').style.justifyContent = 'space-between';
@@ -38,19 +35,19 @@ document.addEventListener('click', (event)=>{
 
 const numberInput = document.querySelector('.amount-input');
 const radioInputs = document.querySelectorAll('.bar-radio');
-numberInput.addEventListener('input', ()=>{
-  radioInputs.forEach(radioInput=>{
-    numberInput.value===radioInput.nextElementSibling.innerText ? radioInput.checked = true : radioInput.checked = false
-    })
-    if(numberInput.value.length > numberInput.getAttribute('maxlength')) {
-      numberInput.value = numberInput.getAttribute('max')
-    }
+numberInput.addEventListener('input', () => {
+  radioInputs.forEach(radioInput => {
+    numberInput.value === radioInput.nextElementSibling.innerText ? radioInput.checked = true : radioInput.checked = false
+  })
+  if (numberInput.value.length > numberInput.getAttribute('maxlength')) {
+    numberInput.value = numberInput.getAttribute('max')
+  }
 })
 
 
 radioInputs.forEach(radioInput => {
-  radioInput.addEventListener('click', (event)=>{
-event.target.setAttribute('checked', true);
-numberInput.value = event.target.nextElementSibling.innerText
+  radioInput.addEventListener('click', (event) => {
+    event.target.setAttribute('checked', true);
+    numberInput.value = event.target.nextElementSibling.innerText
   })
 })

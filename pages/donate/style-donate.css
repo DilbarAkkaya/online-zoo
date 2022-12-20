@@ -174,7 +174,8 @@ h6 {
   line-height: 36px;
   cursor: pointer;
 }
-.bar-radio+.bar-label::before{
+
+.bar-radio+.bar-label::before {
   color: var(--black);
   content: '';
   background: url(../../assets/icons/circle_l.svg) no-repeat;
@@ -184,7 +185,8 @@ h6 {
   width: 0;
   height: 0;
 }
-.bar-radio+.bar-label::after{
+
+.bar-radio+.bar-label::after {
   content: '';
   background: url(../../assets/icons/circle_b.svg) no-repeat;
   position: absolute;
@@ -193,6 +195,7 @@ h6 {
   width: 0;
   height: 0;
 }
+
 .bar-line {
   width: calc(785px + (915 - 785) * (100vw - 1000px) / (1600 - 1000));
   height: 2px;
@@ -201,17 +204,18 @@ h6 {
   top: 12px;
   left: 30px;
 }
+
 .bar-radio+.bar-label {
   color: var(--black);
   background: left 8px url(../../assets/icons/dollar.svg) no-repeat;
 }
 
-.bar-radio:checked + .bar-label {
+.bar-radio:checked+.bar-label {
   color: var(--orange-light);
   background: left 8px url(../../assets/icons/dollar_colored.svg) no-repeat;
 }
 
-.bar-radio:checked + .bar-label:before {
+.bar-radio:checked+.bar-label:before {
   content: '';
   background: url(../../assets/icons/circle_l.svg) no-repeat;
   position: absolute;
@@ -221,7 +225,7 @@ h6 {
   height: 22.95px;
 }
 
-.bar-radio:checked + .bar-label:after {
+.bar-radio:checked+.bar-label:after {
   content: '';
   background: url(../../assets/icons/circle_b.svg) no-repeat;
   position: absolute;
@@ -229,7 +233,8 @@ h6 {
   left: 11px;
   width: 40px;
   height: 40px;
-} 
+}
+
 .amount-form {
   align-items: center;
 
@@ -240,13 +245,15 @@ h6 {
   margin: 0 auto;
   border: 1px solid var(--gray3);
   background: center right 9px url(../../assets/icons/gray_dollar.svg) no-repeat;
-outline: none;
+  outline: none;
   padding: 14px 9px 14px 9px;
   border-radius: 2px;
   line-height: 22px;
   color: var(--gray3);
 }
-.amount-input:active, .amount-input:focus {
+
+.amount-input:active,
+.amount-input:focus {
   border: 1px solid var(--green);
 }
 
@@ -464,6 +471,7 @@ input[type="number"]:focus {
   .hamburger-menu {
     display: flex;
   }
+
   .open {
     flex-direction: column;
     width: 100%;
@@ -473,13 +481,16 @@ input[type="number"]:focus {
     align-items: flex-start;
     padding: 10px 0 33px 10px;
   }
+
   .open a {
     color: var(--black);
   }
+
   .open h1::after {
     left: 10px;
     top: 267px;
-}
+  }
+
   .header {
     position: fixed;
     padding: 1px 0 1px 0;
@@ -536,11 +547,14 @@ input[type="number"]:focus {
   }
 
   .pic {
-    padding: 51px 0 0 calc(0px + (27 - 0) * (100vw - 320px) / (640 - 320));;
+    padding: 51px 0 0 calc(0px + (27 - 0) * (100vw - 320px) / (640 - 320));
+    ;
     margin-bottom: 41px;
   }
+
   .pic img {
-    width: calc(160px + (284 - 160) * (100vw - 320px) / (640 - 320));;
+    width: calc(160px + (284 - 160) * (100vw - 320px) / (640 - 320));
+    ;
   }
 
   .friend-wrapper p:nth-child(1) {
@@ -550,7 +564,8 @@ input[type="number"]:focus {
   .diet {
     font-size: 16px;
     padding: 0;
-    margin-right: calc(47px + (89 - 47) * (100vw - 320px) / (640 - 320));;
+    margin-right: calc(47px + (89 - 47) * (100vw - 320px) / (640 - 320));
+    ;
   }
 
   .diet::after {
@@ -569,7 +584,8 @@ input[type="number"]:focus {
 
   .bar-line {
     width: calc(280px + (524 - 280) * (100vw - 320px) / (640 - 320));
-    left: calc(0px + (40 - 0) * (100vw - 320px) / (640 - 320));;
+    left: calc(0px + (40 - 0) * (100vw - 320px) / (640 - 320));
+    ;
   }
 
   .progress-bar ul {
@@ -585,18 +601,22 @@ input[type="number"]:focus {
     padding-top: 0;
     padding-bottom: 7px;
   }
+
   .bar-radio:checked+.bar-label:before {
     left: 10px;
-}
-.bar-radio:checked+.bar-label:after {
-  left: 2px;
-}
+  }
+
+  .bar-radio:checked+.bar-label:after {
+    left: 2px;
+  }
+
   .bar-label {
     left: -8px;
     font-size: calc(13px + (26 - 13) * (100vw - 320px) / (640 - 320));
     background: url(../../assets/icons/dollar.svg) no-repeat;
     background-position: left calc(14px + (8 - 14) * (100vw - 320px) / (640 - 320));
-    background-size: calc(5px + (10 - 5) * (100vw - 320px) / (640 - 320));;
+    background-size: calc(5px + (10 - 5) * (100vw - 320px) / (640 - 320));
+    ;
   }
 
   .amount-input {
@@ -613,7 +633,8 @@ input[type="number"]:focus {
   }
 
   .freind-button {
-    margin: 28px 0 32px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));;
+    margin: 28px 0 32px calc(0px + (152 - 0) * (100vw - 320px) / (640 - 320));
+    ;
   }
 
   .footer-wrapper {
@@ -628,7 +649,8 @@ input[type="number"]:focus {
     padding-left: 0;
     bottom: 12px;
     right: calc(30px + (42 - (30)) * (100vw - 480px) / (640 - 480));
-    width: calc(277px + (293 - 277) * (100vw - 320px) / (640 - 320));;
+    width: calc(277px + (293 - 277) * (100vw - 320px) / (640 - 320));
+    ;
   }
 }
 
@@ -762,6 +784,7 @@ input[type="number"]:focus {
     right: -74px;
     width: 277px;
   }
+
   .bar-radio {
     appearance: none;
     position: absolute;
