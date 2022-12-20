@@ -27,18 +27,21 @@
         </div>
         <nav class="nav">
           <ul class="list">
-            <li class="item"><a href="../main/index.html" class="nav-link">
+            <li class="item"><a href="../main/index.html" class="nav-link" target="_blank">
                 About
               </a></li>
-            <li class="item">Map</li>
-            <li class="item">Zoos</li>
-            <li class="item active-link">Donate</li>
-            <li class="item">Contact us</li>
+            <li class="item"><a class="nav-link">Map</a></li>
+            <li class="item"><a class="nav-link">Zoos</a></li>
+            <li class="item"><a href="index.html" class="nav-link active-link" target="_blank">
+              Donate
+            </a></li>
+            <li class="item"><a class="nav-link">Contact us</a></li>
             <li class="item">
               <h1 class="head">PetStory Online</h1>
             </li>
           </ul>
         </nav>
+        <div class="modal hide"></div>
         <div class="hamburger-menu">
           <div class="line line-1"></div>
           <div class="line line-2"></div>
@@ -100,7 +103,7 @@
                     <label for="a5" class="bar-label">250</label>
                   </li>
                   <li class="bar-item">
-                    <input type="radio" name="amount" class="bar-radio" id="a6">
+                    <input type="radio" name="amount" class="bar-radio" id="a6" checked>
                     <label for="a6" class="bar-label">100</label>
                   </li>
                   <li class="bar-item">
@@ -114,7 +117,7 @@
                 </ul>
               </div>
               <form action="#" class="amount-form flex-column">
-                <input type="number" class="amount-input" placeholder="Another amount" min="0" max="9999">
+                <input type="number" class="amount-input" placeholder="Another amount" min="0" max="9999" maxlength="4" value="100">
                 <div class="time-wrapper flex-row">
                   <div class="month-wrapper">
                     <input type="radio" name="time" class="time-radio month-input" id="month">
@@ -230,6 +233,7 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
