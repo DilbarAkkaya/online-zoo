@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header some">
+  <header class="header">
     <div class="content-wrapper">
       <div class="header-wrapper">
         <div class="logo">
@@ -53,6 +53,7 @@
             </li>
           </ul>
         </nav>
+        <div class="modal hide"></div>
         <div class="hamburger-menu">
           <div class="line line-1"></div>
           <div class="line line-2"></div>
@@ -105,17 +106,106 @@
           <div class="favorite-container">
             <button class="arrow prev" id="prev"></button>
             <button class="arrow next" id="next"></button>
-            <div class="grid">
-              <figure class="card">
-                <div class="img-wrap">
-                  <img src="../../assets/images/pandas.jpg" alt="pandas" class="card-img">
+            <div class="slide-wrapper" id="slide-wrapper">
+              <div class="slide-container" id="slide-container">
+                <div class="grid slider-left" id="slider-left">
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/alligator.jpg" alt="alligator" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Alligators</h5>
+                        <p>Native to Southwest China</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/meet-fish_icon.svg" alt="meat" class="meat">
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/eagle.jpg" alt="eagle" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Eagles</h5>
+                        <p>Native to South America</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/meet-fish_icon.svg" alt="meatfish" class="meat">
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/goril1.jpg" alt="gorillas" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Gorillas</h5>
+                        <p>Native to Congo</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/banana-bamboo_icon.svg" alt="banana" class="veget">
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/leav.jpg" alt="leav" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Two-toed Sloth</h5>
+                        <p>Mesoamerica, South America</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/banana-bamboo_icon.svg" alt="banana" class="veget">
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/leo.jpg" alt="leopards" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Cheetahs</h5>
+                        <p>Native to Africa</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/meet-fish_icon.svg" alt="meatfish" class="meat">
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="card slide">
+                    <div class="img-wrap">
+                      <img src="../../assets/images/ping.jpg" alt="penguins" class="card-img">
+                    </div>
+                    <figcaption class="description">
+                      <div class="desc-text">
+                        <h5>Penguins</h5>
+                        <p>Native to Antarctica</p>
+                      </div>
+                      <div class="desc-icon">
+                        <img src="../../assets/icons/meet-fish_icon.svg" alt="meatfish" class="meat">
+                      </div>
+                    </figcaption>
+                  </figure>
                 </div>
                 <div class="grid slider-center" id="slider-center">
                   <figure class="card slide">
                     <div class="img-wrap">
                       <img src="../../assets/images/pandas.jpg" alt="pandas" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Giant pandas</h5>
@@ -130,7 +220,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/eagle.jpg" alt="eagle" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Eagles</h5>
@@ -145,7 +235,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/goril.jpg" alt="gorillas" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Gorillas</h5>
@@ -160,7 +250,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/leav.jpg" alt="leav" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Two-toed Sloth</h5>
@@ -175,7 +265,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/leo.jpg" alt="leopards" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Cheetahs</h5>
@@ -190,7 +280,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/ping.jpg" alt="penguins" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Penguins</h5>
@@ -207,7 +297,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/alligator.jpg" alt="alligator" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Alligators</h5>
@@ -222,7 +312,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/eagle.jpg" alt="eagle" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Eagles</h5>
@@ -237,7 +327,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/goril1.jpg" alt="gorillas" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Gorillas</h5>
@@ -252,7 +342,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/leav.jpg" alt="leav" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Two-toed Sloth</h5>
@@ -267,7 +357,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/leo.jpg" alt="leopards" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Cheetahs</h5>
@@ -282,7 +372,7 @@
                     <div class="img-wrap">
                       <img src="../../assets/images/ping.jpg" alt="penguins" class="card-img">
                     </div>
-
+    
                     <figcaption class="description">
                       <div class="desc-text">
                         <h5>Penguins</h5>
@@ -294,10 +384,10 @@
                     </figcaption>
                   </figure>
                 </div>
-
+                
               </div>
             </div>
-
+            
           </div>
 
           <button class="button favorite-button">choose your favorite</button>
@@ -410,7 +500,7 @@
                     The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one
                     jf
                     the ways to instill a love for animals.The best online zoo I’ve met.
-                    <br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                    <br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. 
                   </p>
                 </div>
                 <div class="card-content flex-column">
@@ -434,8 +524,7 @@
                     to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
 
                   </p>
-                </div>
-                <div class="card-content flex-column">
+                </div><div class="card-content flex-column">
                   <figure class="card-photo flex-row">
                     <img src="../../assets/icons/user.svg" alt="user-photo">
                     <figcaption>
@@ -605,9 +694,9 @@
                 </div>
               </div>
               <div class="testimonials-input">
-                <label for="volume" class="label-volume"> </label>
-                <input type="range" class="volume" id="volume" name="volume" min="0" max="7" value="0">
-
+                <label for="volume" class="label-volume">     </label>
+                  <input type="range" class="volume" id="volume" name="volume" min="0" max="7" value="0">
+           
               </div>
               <button class="button feedback-button">Leave feedback</button>
             </div>
@@ -616,13 +705,13 @@
       </div>
     </section>
     <div class="modal-popup hide">
-      <div class="modal-dialog">
-        <div class="modal-content">
+                <div class="modal-dialog">
+                <div class="modal-content">
 
-          <div class="popup-close"></button>
-          </div>
-        </div>
-      </div>
+                  <div class="popup-close"></button>
+                </div>
+              </div>
+            </div>
   </main>
   <footer class="footer">
     <div class="content-wrapper">
@@ -725,7 +814,7 @@
 
     </div>
   </footer>
-  <script type="module" src="index.js"></script>
+  <script type ="module" src="index.js"></script>
 </body>
 
 </html>
