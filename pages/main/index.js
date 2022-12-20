@@ -229,3 +229,4 @@ closeButton.addEventListener('click', ()=>{
       modalContent.removeChild(modalContent.children[1])
     }
   })
+
