@@ -229,3 +229,11 @@ closeButton.addEventListener('click', ()=>{
       modalContent.removeChild(modalContent.children[1])
     }
   })
+  window.addEventListener('load', ()=> {
+    //let leftItems = sliderLeft.innerHTML;
+   // sliderCenter.innerHTML = leftItems;
+    sliderLeft.innerHTML = '';
+    createSliderLeft();
+    sliderRight.innerHTML = '';
+    createSliderRight();
+  })
